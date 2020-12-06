@@ -1,8 +1,11 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Layout from '../components/layout'
-import styles from '../styles/Home.module.css'
-import { getSortedPostsData } from '../lib/posts'
+
+import styles from '../styles/Home.module.scss'
+
 import { GetStaticProps } from 'next'
+import { getSortedPostsData } from '../lib/posts'
 
 const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()
@@ -19,13 +22,17 @@ function Home({ allPostsData }) {
       <Head>
         <title>diary</title>
       </Head>
-      <Layout home>layout</Layout>
+      <Layout home>home</Layout>
       <ul>
         {allPostsData.map(({ id, date, title }) => (
           <li key={id}>
-            {title}
-            <br />
-            {date}
+            <Link href={`p/${id}`} key={id}>
+              <a>
+                {title}
+                <br />
+                {date}
+              </a>
+            </Link>
           </li>
         ))}
       </ul>
