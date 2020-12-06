@@ -1,18 +1,17 @@
-import Head from "next/head";
-import Link from "next/link";
-import Layout from "../components/layout";
-import styles from "../styles/Home.module.css";
-import { getSortedPostsData } from "../lib/posts";
-import { GetStaticProps } from "next";
+import Head from 'next/head'
+import Layout from '../components/layout'
+import styles from '../styles/Home.module.css'
+import { getSortedPostsData } from '../lib/posts'
+import { GetStaticProps } from 'next'
 
 const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData();
+  const allPostsData = getSortedPostsData()
   return {
     props: {
       allPostsData,
     },
-  };
-};
+  }
+}
 
 function Home({ allPostsData }) {
   return (
@@ -31,8 +30,8 @@ function Home({ allPostsData }) {
         ))}
       </ul>
     </div>
-  );
+  )
 }
 
-export default Home;
-export { getStaticProps };
+export default Home
+export { getStaticProps }
