@@ -1,10 +1,21 @@
 import fs from 'fs'
 import path from 'path'
-import matter from 'gray-matter'
-import remark from 'remark'
-import html from 'remark-html'
+import matter from 'front-matter'
 
-const postsDirectory = path.join(process.cwd(), 'posts')
+const postsDirectory = path.join(process.cwd(), '_posts')
+
+function getTypedMatterResult(fileContents: string) {
+  const matterResult = matter(fileContents)
+  const attributes = matterResult.attributes as {
+    title: string
+    date: string
+  }
+
+  return {
+    content: matterResult.body,
+    ...attributes,
+  }
+}
 
 export function getSortedPostsData() {
   // Get file names under /posts
@@ -17,13 +28,13 @@ export function getSortedPostsData() {
     const fullPath = path.join(postsDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
 
-    // Use gray-matter to parse the post metadata section
-    const matterResult = matter(fileContents)
+    // parse the post metadata section
+    const matterResult = getTypedMatterResult(fileContents)
 
-    // Combine the data with the id
     return {
       id,
-      ...(matterResult.data as { date: string; title: string }),
+      title: matterResult.title,
+      date: matterResult.date,
     }
   })
   // Sort posts by date
@@ -51,19 +62,11 @@ export async function getPostData(id: string) {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
-  // Use gray-matter to parse the post metadata section
-  const matterResult = matter(fileContents)
-
-  // Use remark to convert markdown into HTML string
-  const processedContent = await remark()
-    .use(html)
-    .process(matterResult.content)
-  const contentHtml = processedContent.toString()
+  const matterResult = getTypedMatterResult(fileContents)
 
   // Combine the data with the id and contentHtml
   return {
     id,
-    contentHtml,
-    ...(matterResult.data as { date: string; title: string }),
+    ...matterResult,
   }
 }

@@ -1,9 +1,12 @@
-import Layout from '../../components/layout'
+import { GetStaticProps, GetStaticPaths } from 'next'
 import { getAllPostIds, getPostData } from '../../lib/posts'
+
 import Head from 'next/head'
 import Date from '../../components/date'
+import Layout from '../../components/layout'
+import ReactMarkdown from 'react-markdown/with-html'
+
 import utilStyles from '../../styles/utils.module.scss'
-import { GetStaticProps, GetStaticPaths } from 'next'
 
 function Post({
   postData,
@@ -11,7 +14,7 @@ function Post({
   postData: {
     title: string
     date: string
-    contentHtml: string
+    content: string
   }
 }) {
   return (
@@ -24,7 +27,7 @@ function Post({
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <ReactMarkdown source={postData.content} escapeHtml={false} />
       </article>
     </Layout>
   )
