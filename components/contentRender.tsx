@@ -1,21 +1,13 @@
----
-title: 'hello'
-date: '2020-11-30'
----
-Hello Nextjs
-
-*a*
-
-```tsx
 import { FC } from 'react'
 import ReactMarkdown from 'react-markdown/with-html'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { nord } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { nord } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 interface Props {
   content: string
 }
 
+// pre > code
 const CodeBlock = ({
   language,
   value,
@@ -52,7 +44,3 @@ const ContentRender: FC<Props> = ({ content }) => {
 }
 
 export default ContentRender
-
-```
-
-

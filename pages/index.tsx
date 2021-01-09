@@ -1,13 +1,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
 
-import styles from '../styles/Home.module.scss'
-
-import { GetStaticProps } from 'next'
+import { InferGetStaticPropsType, NextPage } from 'next'
 import { getSortedPostsData } from '../lib/posts'
 
-const getStaticProps: GetStaticProps = async () => {
+type Props = InferGetStaticPropsType<typeof getStaticProps>
+
+export const getStaticProps = async () => {
   const allPostsData = getSortedPostsData()
   return {
     props: {
@@ -16,17 +15,17 @@ const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-function Home({ allPostsData }) {
+const Home: NextPage<Props> = ({ allPostsData }) => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>diary</title>
+        <title>📖</title>
       </Head>
-      <Layout home>home</Layout>
+      <p>📖</p>
       <ul>
         {allPostsData.map(({ id, date, title }) => (
           <li key={id}>
-            <Link href={`p/${id}`} key={id}>
+            <Link href={`/p/${id}`} key={id}>
               <a>
                 {title}
                 <br />
@@ -41,4 +40,3 @@ function Home({ allPostsData }) {
 }
 
 export default Home
-export { getStaticProps }

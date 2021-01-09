@@ -4,17 +4,29 @@ import matter from 'front-matter'
 
 const postsDirectory = path.join(process.cwd(), '_posts')
 
-function getTypedMatterResult(fileContents: string) {
+export interface PostAttributes {
+  title: string
+  date: string
+  content: string
+}
+
+export type PostData = PostAttributes & {
+  id: string
+}
+
+function getMatterResult(fileContents: string) {
   const matterResult = matter(fileContents)
   const attributes = matterResult.attributes as {
     title: string
     date: string
   }
 
-  return {
+  const post: PostAttributes = {
     content: matterResult.body,
     ...attributes,
   }
+
+  return post
 }
 
 export function getSortedPostsData() {
@@ -29,7 +41,7 @@ export function getSortedPostsData() {
     const fileContents = fs.readFileSync(fullPath, 'utf8')
 
     // parse the post metadata section
-    const matterResult = getTypedMatterResult(fileContents)
+    const matterResult = getMatterResult(fileContents)
 
     return {
       id,
@@ -62,11 +74,12 @@ export async function getPostData(id: string) {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
-  const matterResult = getTypedMatterResult(fileContents)
+  const matterResult = getMatterResult(fileContents)
 
-  // Combine the data with the id and contentHtml
-  return {
+  const postData: PostData = {
     id,
     ...matterResult,
   }
+
+  return postData
 }

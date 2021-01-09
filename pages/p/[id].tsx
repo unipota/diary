@@ -1,39 +1,23 @@
-import { GetStaticProps, GetStaticPaths } from 'next'
-import { getAllPostIds, getPostData } from '../../lib/posts'
-
 import Head from 'next/head'
-import Date from '../../components/date'
-import Layout from '../../components/layout'
-import ReactMarkdown from 'react-markdown/with-html'
+import Date from '@components/date'
+import Layout from '@components/layout'
+import ContentRender from '@components/contentRender'
 
-import utilStyles from '../../styles/utils.module.scss'
+import {
+  GetStaticPaths,
+  GetStaticPropsContext,
+  InferGetStaticPropsType,
+  NextPage,
+} from 'next'
+import { getAllPostIds, getPostData } from '@lib/posts'
 
-function Post({
-  postData,
-}: {
-  postData: {
-    title: string
-    date: string
-    content: string
-  }
-}) {
-  return (
-    <Layout>
-      <Head>
-        <title>{postData.title}</title>
-      </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
-        </div>
-        <ReactMarkdown source={postData.content} escapeHtml={false} />
-      </article>
-    </Layout>
-  )
+type PostSlug = {
+  id: string
 }
 
-const getStaticPaths: GetStaticPaths = async () => {
+type Props = InferGetStaticPropsType<typeof getStaticProps>
+
+export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds()
   return {
     paths,
@@ -41,8 +25,10 @@ const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postData = await getPostData(params.id as string)
+export const getStaticProps = async ({
+  params,
+}: GetStaticPropsContext<PostSlug>) => {
+  const postData = await getPostData(params!.id)
   return {
     props: {
       postData,
@@ -50,5 +36,21 @@ const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 }
 
+const Post: NextPage<Props> = ({ postData }) => {
+  return (
+    <Layout>
+      <Head>
+        <title>{postData.title}</title>
+      </Head>
+      <article>
+        <h1>{postData.title}</h1>
+        <div>
+          <Date dateString={postData.date} />
+        </div>
+        <ContentRender content={postData.content}></ContentRender>
+      </article>
+    </Layout>
+  )
+}
+
 export default Post
-export { getStaticPaths, getStaticProps }

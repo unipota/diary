@@ -1,9 +1,16 @@
 /* eslint-disable
    @typescript-eslint/no-var-requires
 */
-module.exports = {
+const bundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+
+module.exports = bundleAnalyzer({
   reactStrictMode: true,
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
-}
+  experimental: {
+    optimizeFonts: true,
+  },
+})

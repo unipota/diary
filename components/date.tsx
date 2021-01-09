@@ -1,11 +1,13 @@
+import { FC } from 'react'
 import { parseISO, format } from 'date-fns'
-import styled from 'styled-components'
 
-export default function Date({ dateString }: { dateString: string }) {
-  const date = parseISO(dateString)
-  return <Time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</Time>
+interface Props {
+  dateString: string
 }
 
-const Time = styled.time`
-  color: blue;
-`
+const Date: FC<Props> = ({ dateString }) => {
+  const date = parseISO(dateString)
+  return <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</time>
+}
+
+export default Date
