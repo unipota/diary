@@ -1,15 +1,14 @@
-import Head from 'next/head'
-import Date from '@components/date'
-import Layout from '@components/layout'
-import ContentRender from '@components/contentRender'
-
-import {
+import type {
   GetStaticPaths,
   GetStaticPropsContext,
   InferGetStaticPropsType,
   NextPage,
 } from 'next'
 import { getAllPostIds, getPostData } from '@lib/posts'
+import Head from 'next/head'
+import Date from '@components/date'
+import Layout from '@components/layout'
+import ContentRender from '@components/contentRender'
 
 type PostSlug = {
   id: string

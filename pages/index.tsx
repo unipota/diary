@@ -1,8 +1,7 @@
+import type { InferGetStaticPropsType, NextPage } from 'next'
+import { getSortedPostsData } from '@lib/posts'
 import Head from 'next/head'
 import Link from 'next/link'
-
-import { InferGetStaticPropsType, NextPage } from 'next'
-import { getSortedPostsData } from '../lib/posts'
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -17,11 +16,11 @@ export const getStaticProps = async () => {
 
 const Home: NextPage<Props> = ({ allPostsData }) => {
   return (
-    <div>
+    <div className="flex">
       <Head>
-        <title>📖</title>
+        <title>unilog</title>
       </Head>
-      <p>📖</p>
+      <p>unilog</p>
       <ul>
         {allPostsData.map(({ id, date, title }) => (
           <li key={id}>

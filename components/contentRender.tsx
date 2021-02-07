@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import type { FC } from 'react'
 import ReactMarkdown from 'react-markdown/with-html'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { nord } from 'react-syntax-highlighter/dist/cjs/styles/prism'
