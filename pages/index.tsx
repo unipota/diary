@@ -24,7 +24,7 @@ const Home: NextPage<Props> = ({ allPostsData }) => {
       <ul>
         {allPostsData.map(({ id, date, title }) => (
           <li key={id}>
-            <Link href={`/p/${id}`} key={id}>
+            <Link href={`/p/${id}`}>
               <a>
                 {title}
                 <br />
