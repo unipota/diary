@@ -18,6 +18,7 @@ const Layout: FC<Props> = ({ children }) => {
 const container = css`
   margin: 0 auto;
   max-width: 600px;
+  padding: 24px 0;
 `
 
 export default Layout

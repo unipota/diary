@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 
-import AppHead from '@components/appHead'
 import { GlobalStyles } from 'twin.macro'
+import AppHead from '@components/appHead'
 import Layout from '@components/layout'
 
 const App = ({ Component, pageProps }: AppProps) => {

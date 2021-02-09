@@ -2,57 +2,19 @@
 title: 'hello'
 date: '2020-11-30'
 ---
-Hello Nextjs
+# Hello Nextjs
 
 *a*
 
 ```tsx
 import { FC } from 'react'
 import ReactMarkdown from 'react-markdown/with-html'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { nord } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 
-interface Props {
-  content: string
-}
-
-const CodeBlock = ({
-  language,
-  value,
-}: {
-  language: string
-  value: string
-}) => {
-  return (
-    <SyntaxHighlighter
-      language={language}
-      style={nord}
-      customStyle={{
-        fontSize: '1rem',
-        borderRadius: 5,
-        padding: '1rem',
-        marginBottom: '2rem',
-      }}
-    >
-      {value}
-    </SyntaxHighlighter>
-  )
-}
-
-const ContentRender: FC<Props> = ({ content }) => {
-  return (
-    <>
-      <ReactMarkdown
-        source={content}
-        escapeHtml={false}
-        renderers={{ code: CodeBlock }}
-      />
-    </>
-  )
-}
-
-export default ContentRender
+console.log('hello')
 
 ```
 
+- a
+- aa
+  - 
 
