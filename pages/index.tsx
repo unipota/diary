@@ -1,5 +1,5 @@
-import type { InferGetStaticPropsType, NextPage } from 'next'
 import { getSortedPostsData } from '@lib/posts'
+import type { InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 

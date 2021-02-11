@@ -1,5 +1,5 @@
-import type { FC } from 'react'
 import NextHead from 'next/head'
+import type { FC } from 'react'
 
 const AppHead: FC = () => {
   return (

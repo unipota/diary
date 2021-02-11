@@ -6,6 +6,7 @@ const bundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = bundleAnalyzer({
+  trailingSlash: false,
   reactStrictMode: true,
   typescript: {
     ignoreBuildErrors: false,

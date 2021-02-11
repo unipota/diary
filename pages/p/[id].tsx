@@ -1,14 +1,14 @@
+import ContentRender from '@components/contentRender'
+import Date from '@components/date'
+import Layout from '@components/layout'
+import { getAllPostIds, getPostData } from '@lib/posts'
 import type {
   GetStaticPaths,
   GetStaticPropsContext,
   InferGetStaticPropsType,
   NextPage,
 } from 'next'
-import { getAllPostIds, getPostData } from '@lib/posts'
 import Head from 'next/head'
-import Date from '@components/date'
-import Layout from '@components/layout'
-import ContentRender from '@components/contentRender'
 
 type PostSlug = {
   id: string
@@ -37,7 +37,7 @@ export const getStaticProps = async ({
 
 const Post: NextPage<Props> = ({ postData }) => {
   return (
-    <Layout>
+    <>
       <Head>
         <title>{postData.title}</title>
       </Head>
@@ -48,7 +48,7 @@ const Post: NextPage<Props> = ({ postData }) => {
         </div>
         <ContentRender content={postData.content}></ContentRender>
       </article>
-    </Layout>
+    </>
   )
 }
 
