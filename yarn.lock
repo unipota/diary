@@ -562,10 +562,10 @@
     remark "^13.0.0"
     unist-util-find-all-after "^3.0.2"
 
-"@trivago/prettier-plugin-sort-imports@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-1.4.2.tgz#21183634e1e70bc5aabb2ed0b953058ea985386c"
-  integrity sha512-J/1t26l8HfnSExeHt+Q++iXJyLdiovh6At3ndTHpCVSXhCYBVP/1mipk7GaC5icuUfZeNS9m5rLX8sPr4Fp1rQ==
+"@trivago/prettier-plugin-sort-imports@^1.4.4":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-1.4.4.tgz#28905ce2e0ea7450b96edb425e1343c35248d8d4"
+  integrity sha512-tIdq079Xs7dIT8hYnKbY5p4AUz5UzOvbzBhM/xgYn1z2/Es//tBE8/zIzVJ3uyBLWe7xCDNEFmzHx3K9aU/oIg==
   dependencies:
     "@babel/core" "^7.11.4"
     "@babel/generator" "^7.10.5"
