@@ -1,6 +1,6 @@
+import matter from 'front-matter'
 import fs from 'fs'
 import path from 'path'
-import matter from 'front-matter'
 
 const postsDirectory = path.join(process.cwd(), '_posts')
 

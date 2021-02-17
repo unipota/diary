@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['*.tsx', './pages/**/*.js', './components/**/*.js'],
-  darkMode: 'media', // 'media' or 'class'
+  darkMode: 'media',
   theme: {
     screens: {
       sm: '480px',
@@ -13,11 +13,8 @@ module.exports = {
       sans: ['sans-serif'],
       serif: ['serif'],
     },
-    extend: {
-      colors: {
-        'accent-1': '#333',
-      },
-    },
+    spacing: {},
+    extend: {},
   },
   variants: {
     extend: {},

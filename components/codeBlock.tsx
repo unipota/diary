@@ -1,3 +1,4 @@
+import { useTheme } from '@emotion/react'
 import type { FC } from 'react'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { nord } from 'react-syntax-highlighter/dist/cjs/styles/prism'
@@ -15,6 +16,7 @@ const CodeBlock: FC<Props> = ({
   language: string
   value: string
 }) => {
+  const theme = useTheme()
   return (
     <SyntaxHighlighter
       language={language}
@@ -23,6 +25,7 @@ const CodeBlock: FC<Props> = ({
         borderRadius: 12,
         padding: '1rem',
         marginBottom: '1rem',
+        backgroundColor: theme.color.placeholder,
       }}
     >
       {value}

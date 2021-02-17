@@ -1,4 +1,5 @@
 import type { Theme } from '@emotion/react'
+import { transparentize } from 'color2k'
 
 const nord = {
   nord0: '#2E3440', // Polar Night
@@ -22,25 +23,23 @@ const nord = {
 export const LightTheme: Theme = {
   color: {
     background: nord.nord4,
-    shade: '#2e3440',
-    body: '#d8dee9',
-    tint: '#88c0d0',
-    placeholder: '#4c566a',
+    body: nord.nord2,
+    shade: nord.nord3,
+    placeholder: nord.nord0,
   },
   textColor: {
-    base: nord.nord0,
+    base: nord.nord3,
   },
 }
 
 export const DarkTheme: Theme = {
   color: {
     background: nord.nord0,
-    shade: '#2e3440',
-    body: '#d8dee9',
-    tint: '#88c0d0',
-    placeholder: '#4c566a',
+    body: nord.nord4,
+    shade: nord.nord4,
+    placeholder: nord.nord3,
   },
   textColor: {
-    base: nord.nord6,
+    base: transparentize(nord.nord4, 0.2),
   },
 }

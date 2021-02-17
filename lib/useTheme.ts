@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const useTheme = () => {
+const useThemePref = () => {
   const [isDark, setIsDark] = useState(false)
 
   const onThemeChanged = (ev: MediaQueryListEvent) => {
@@ -20,4 +20,4 @@ const useTheme = () => {
   return isDark
 }
 
-export default useTheme
+export default useThemePref
