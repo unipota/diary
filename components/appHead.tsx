@@ -18,7 +18,7 @@ const AppHead: FC = () => {
       <meta name="twitter:site" content="@unipota" />
       <meta name="twitter:creator" content="@unipota" />
       <meta name="twitter:url" content="https://log.unipota.me" />
-      <meta name="twitter:title" content="test" />
+      <meta name="twitter:title" content="test2" />
       <meta name="twitter:description" content="test" />
       <meta name="twitter:image" content="https://img.unipota.me/test" />
     </NextHead>
