@@ -5,24 +5,22 @@ const AppHead: FC = () => {
   return (
     <NextHead>
       <link rel="icon" href="/favicon.ico" />
-      <meta name="description" content="" />
-      <meta property="og:title" content="" />
-      <meta property="og:description" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="test" />
+      {/* OGP */}
+      <meta property="og:title" content="test" />
+      <meta property="og:description" content="test" />
       <meta property="og:image" content="https://img.unipota.me/test" />
       <meta property="og:type" content="article" />
       <meta property="og:locale" content="ja_JP" />
       {/* Twitter */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="" />
-      <meta property="twitter:title" content="" />
-      <meta property="twitter:description" content="" />
-      <meta property="twitter:image" content="https://img.unipota.me/test" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <script
-        async
-        src="https://platform.twitter.com/widgets.js"
-        charSet="utf-8"
-      ></script>
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@unipota" />
+      <meta name="twitter:creator" content="@unipota" />
+      <meta name="twitter:url" content="https://log.unipota.me" />
+      <meta name="twitter:title" content="test" />
+      <meta name="twitter:description" content="test" />
+      <meta name="twitter:image" content="https://img.unipota.me/test" />
     </NextHead>
   )
 }
