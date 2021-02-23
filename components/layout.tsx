@@ -14,14 +14,14 @@ const Layout: FC<Props> = ({ children }) => {
 }
 
 const Body = styled.div`
-  /* color: ${(props) => props.theme.textColor.base}; */
-  height: 100vh;
+  color: ${(props) => props.theme.textColor.base};
+  font-family: 'Quicksand', sans-serif;
   width: 100vw;
 `
 
 const Container = styled.main`
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 580px;
   padding: 32px;
 `
 

@@ -38,7 +38,7 @@ const Post: NextPage<Props> = ({ postData }) => {
   return (
     <>
       <Head>
-        <title>{postData.title}</title>
+        <title>{postData.title} : unilog</title>
       </Head>
       <article>
         <h1>{postData.title}</h1>

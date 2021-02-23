@@ -21,6 +21,12 @@ const AppHead: FC = () => {
       <meta name="twitter:title" content="test2" />
       <meta name="twitter:description" content="test" />
       <meta name="twitter:image" content="https://img.unipota.me/test" />
+      {/* font */}
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet"
+      />
     </NextHead>
   )
 }
