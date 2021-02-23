@@ -19,8 +19,8 @@ const Layout: FC<Props> = ({ children }) => {
 
 const Body = styled.div`
   color: ${(props) => props.theme.textColor.base};
-  font-family: 'Quicksand', 'ヒラギノ丸ゴ Pro W4', 'ヒラギノ丸ゴ Pro',
-    'Hiragino Maru Gothic Pro', 'ヒラギノ角ゴ Pro W3',
+  font-family: 'Quicksand', 'Kosugi Maru', 'ヒラギノ丸ゴ Pro W4',
+    'ヒラギノ丸ゴ Pro', 'Hiragino Maru Gothic Pro', 'ヒラギノ角ゴ Pro W3',
     'Hiragino Kaku Gothic Pro', 'HG丸ｺﾞｼｯｸM-PRO', 'HGMaruGothicMPRO', sans-serif;
   width: 100vw;
 `
@@ -37,7 +37,7 @@ const Icon = styled.a`
   border-radius: 100%;
   display: flex;
   height: var(--size);
-  margin: 0 auto 64px;
+  margin: 0 auto 78px;
   padding: 8px;
   width: var(--size);
 

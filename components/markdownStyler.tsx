@@ -62,7 +62,12 @@ const Body = styled.div`
     font-weight: 300;
     line-height: 1.7rem;
     list-style-position: inside;
-    padding: 0.5rem 0;
+    padding: 0.2rem 0;
+  }
+  ul {
+    & ul {
+      padding-left: 1.5rem;
+    }
   }
   table {
     font-size: 1.2rem;

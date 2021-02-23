@@ -7,6 +7,7 @@ declare module '@emotion/react' {
       body: string
       shade: string
       placeholder: string
+      tint: string
     }
     textColor: {
       base: string

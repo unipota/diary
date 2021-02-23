@@ -26,6 +26,7 @@ export const LightTheme: Theme = {
     body: nord.nord2,
     shade: transparentize(nord.nord4, 0.2),
     placeholder: nord.nord0,
+    tint: nord.nord4,
   },
   textColor: {
     base: nord.nord3,
@@ -38,6 +39,7 @@ export const DarkTheme: Theme = {
     body: nord.nord4,
     shade: transparentize(nord.nord1, 0.1),
     placeholder: nord.nord3,
+    tint: nord.nord4,
   },
   textColor: {
     base: transparentize(nord.nord4, 0.2),

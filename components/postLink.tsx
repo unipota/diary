@@ -1,3 +1,4 @@
+import Date from '@components/date'
 import { genColor } from '@lib/color'
 import Link from 'next/link'
 import { FC } from 'react'
@@ -20,7 +21,7 @@ const PostLink: FC<Props> = ({ id, date, title }) => {
         />
         <Body>
           <p tw="text-lg font-bold">{title}</p>
-          <p tw="text-sm">{date}</p>
+          <Date dateString={date} />
         </Body>
       </Container>
     </Link>

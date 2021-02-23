@@ -30,6 +30,10 @@ const AppHead: FC = () => {
         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
         rel="stylesheet"
       />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+        rel="stylesheet"
+      />
     </NextHead>
   )
 }
