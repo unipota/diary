@@ -31,7 +31,7 @@ const AppHead: FC = () => {
         rel="stylesheet"
       />
       <link
-        href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
         rel="stylesheet"
       />
     </NextHead>
