@@ -1,10 +1,13 @@
+import { nord } from '@styles/theme'
 import NextHead from 'next/head'
 import type { FC } from 'react'
 
 const AppHead: FC = () => {
   return (
     <NextHead>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.svg" />
+      <link rel="mask-icon" href="/favicon.svg" color={nord.nord3} />
+      {/* <meta name="theme-color" content="#ffffff" /> */}
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="test" />
       {/* OGP */}
@@ -24,7 +27,7 @@ const AppHead: FC = () => {
       {/* font */}
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
-        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
         rel="stylesheet"
       />
     </NextHead>
