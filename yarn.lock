@@ -652,10 +652,10 @@
   dependencies:
     "@thi.ng/api" "^7.0.0"
 
-"@thi.ng/random@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@thi.ng/random/-/random-2.3.0.tgz#2e3149a689509ffbc413a614c6880e772ab9204c"
-  integrity sha512-tMzlNWKyhQN3ESX/sv0zJ0bRTWj+MIyjIXMcE3hRqKS6V07ELyyd51eougkK7otZQiejnymfrkFkqsIMze9OsQ==
+"@thi.ng/random@^2.3.0", "@thi.ng/random@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@thi.ng/random/-/random-2.3.1.tgz#5c2d7e74e078d5ee49a4475ba51938445c45d144"
+  integrity sha512-msUl2lUA0nZyzLoxsknUb6lWXqv1x21csl8Bbc+bcEVvaCokHhCbJK0tRrsytMHI30A8Ga6+TkaNaiLeRCo1lA==
   dependencies:
     "@thi.ng/api" "^7.0.0"
     "@thi.ng/checks" "^2.9.0"
