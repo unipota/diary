@@ -43,7 +43,7 @@ const Container = styled.a`
 const Body = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 0 0 24px;
+  margin: 0 0 0 12px;
 `
 
 const Dot = styled.div`
