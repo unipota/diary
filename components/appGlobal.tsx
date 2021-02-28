@@ -22,7 +22,7 @@ const AppGlobal: FC<Props> = ({ children }) => {
           html {
             background-color: ${currentTheme.color.background};
             color: ${currentTheme.textColor.base};
-            transition: all 0.4s;
+            transition: all 0.6s;
           }
         `}
       />

@@ -57,12 +57,18 @@ const TitleLogo: FC = () => {
       return
     }
 
+    const clean = () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef?.current)
+      }
+      animationRef.current = null
+      tickRef.current = 0
+    }
+
     const animate = () => {
       if (!illoRef.current) return
       if (tickRef.current >= animFrame && animationRef.current !== null) {
-        cancelAnimationFrame(animationRef.current)
-        animationRef.current = null
-        tickRef.current = 0
+        clean()
         return
       }
       const progress = tickRef.current / animFrame
@@ -75,13 +81,7 @@ const TitleLogo: FC = () => {
     }
     animate()
 
-    return () => {
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef?.current)
-      }
-      animationRef.current = null
-      tickRef.current = 0
-    }
+    return clean
   }, [isDark])
 
   const toggleTheme = () => {
