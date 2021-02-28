@@ -25,7 +25,7 @@ const Body = styled.div`
   width: 100vw;
 `
 
-const Container = styled.main`
+const Container = styled.div`
   margin: 0 auto 32px;
   max-width: 540px;
   padding: 32px;

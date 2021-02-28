@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 const useThemePref = () => {
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState<boolean | null>(null)
 
   const onThemeChanged = (ev: MediaQueryListEvent) => {
     setIsDark(ev.matches)

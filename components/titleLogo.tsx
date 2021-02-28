@@ -7,7 +7,8 @@ import Zdog from 'zdog'
 const animFrame = 120
 
 const TitleLogo: FC = () => {
-  const tickRef = useRef<number>(0)
+  const tickRef = useRef(0)
+  const isFirstClicked = useRef(false)
   const illoRef = useRef<Zdog.Illustration | null>(null)
   const animationRef = useRef<ReturnType<typeof requestAnimationFrame> | null>(
     null
@@ -15,7 +16,9 @@ const TitleLogo: FC = () => {
   const { state, dispatch } = useContext(ThemeContext)
   const isDark = state.themePref === 'Dark'
 
-  // setup zdog
+  // setup zdog &
+  // first render
+  // (isDark === false)
   useEffect(() => {
     const illo = new Zdog.Illustration({
       element: '.zdog-canvas',
@@ -27,14 +30,16 @@ const TitleLogo: FC = () => {
       addTo: illo,
       diameter: 20,
       stroke: false,
-      color: isDark ? nord.nord4 : nord.nord3,
-      backface: isDark ? nord.nord3 : nord.nord4,
+      color: nord.nord3,
+      backface: nord.nord4,
     })
     dome.copy({
-      color: isDark ? nord.nord3 : nord.nord4,
-      backface: isDark ? nord.nord4 : nord.nord3,
+      color: nord.nord4,
+      backface: nord.nord3,
       rotate: { x: Zdog.TAU / 2 },
     })
+
+    illoRef.current.updateRenderGraph()
 
     return () => {
       illoRef.current = null
@@ -43,6 +48,15 @@ const TitleLogo: FC = () => {
 
   // react animation
   useEffect(() => {
+    console.log('isdark changed')
+    if (!isFirstClicked.current) {
+      if (illoRef.current !== null) {
+        illoRef.current.rotate.y = isDark ? Zdog.TAU / 2 : 0
+        illoRef.current.updateRenderGraph()
+      }
+      return
+    }
+
     const animate = () => {
       if (!illoRef.current) return
       if (tickRef.current >= animFrame && animationRef.current !== null) {
@@ -54,7 +68,7 @@ const TitleLogo: FC = () => {
       const progress = tickRef.current / animFrame
       illoRef.current.rotate.y =
         (Zdog.easeInOut(progress % 1, 3) * Zdog.TAU) / 2 +
-        (isDark ? Zdog.TAU / 2 : 0)
+        (isDark ? 0 : Zdog.TAU / 2)
       tickRef.current++
       illoRef.current.updateRenderGraph()
       animationRef.current = requestAnimationFrame(animate)
@@ -72,6 +86,7 @@ const TitleLogo: FC = () => {
 
   const toggleTheme = () => {
     dispatch({ type: isDark ? 'set_light' : 'set_dark' })
+    isFirstClicked.current = true
   }
 
   return (
