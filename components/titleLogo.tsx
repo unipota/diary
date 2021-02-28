@@ -48,7 +48,6 @@ const TitleLogo: FC = () => {
 
   // react animation
   useEffect(() => {
-    console.log('isdark changed')
     if (!isFirstClicked.current) {
       if (illoRef.current !== null) {
         illoRef.current.rotate.y = isDark ? Zdog.TAU / 2 : 0
@@ -91,7 +90,7 @@ const TitleLogo: FC = () => {
 
   return (
     <Body onClick={toggleTheme}>
-      <Canvas className="zdog-canvas" width="20" height="20" />
+      <Canvas className="zdog-canvas" width="28" height="28" />
       <p>unilog</p>
     </Body>
   )
@@ -108,7 +107,7 @@ const Body = styled.div`
   width: 100%;
 
   & > canvas {
-    margin: 6px 12px 0 0;
+    margin: 6px 8px 0 0;
   }
 `
 
