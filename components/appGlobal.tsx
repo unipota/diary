@@ -19,10 +19,14 @@ const AppGlobal: FC<Props> = ({ children }) => {
       <GlobalStyles />
       <Global
         styles={css`
-          html {
+          body {
             background-color: ${currentTheme.color.background};
             color: ${currentTheme.textColor.base};
-            transition: all 0.6s;
+            transition: background-color 1.2s ease-in;
+
+            & * {
+              transition: all 0.2s ease-in;
+            }
           }
         `}
       />
