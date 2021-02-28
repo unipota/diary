@@ -42,6 +42,6 @@ export const DarkTheme: Theme = {
     tint: nord.nord4,
   },
   textColor: {
-    base: transparentize(nord.nord4, 0.2),
+    base: nord.nord4,
   },
 }

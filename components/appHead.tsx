@@ -1,8 +1,10 @@
+import { useTheme } from '@emotion/react'
 import { nord } from '@styles/theme'
 import NextHead from 'next/head'
 import type { FC } from 'react'
 
 const AppHead: FC = () => {
+  const theme = useTheme()
   return (
     <NextHead>
       <link rel="icon" href="/favicon.svg" />
@@ -13,7 +15,7 @@ const AppHead: FC = () => {
         href="/feed"
         title="RSS2.0"
       />
-      {/* <meta name="theme-color" content="#ffffff" /> */}
+      <meta name="theme-color" content={theme.color.background} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="test" />
       {/* OGP */}

@@ -1,5 +1,6 @@
 import PostLink from '@components/postLink'
 import RoundedTriangle from '@components/roundedTriangle'
+import TitleLogo from '@components/titleLogo'
 import { getSortedPostsData } from '@lib/posts'
 import type { InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head'
@@ -22,10 +23,7 @@ const Home: NextPage<Props> = ({ allPostsData }) => {
       <Head>
         <title>unilog</title>
       </Head>
-      <TitleLogo>
-        <div></div>
-        <p>unilog</p>
-      </TitleLogo>
+      <TitleLogo />
       <LogoSeparator>
         <RoundedTriangle />
       </LogoSeparator>
@@ -39,24 +37,6 @@ const Home: NextPage<Props> = ({ allPostsData }) => {
     </div>
   )
 }
-
-const TitleLogo = styled.div`
-  align-items: center;
-  display: flex;
-  font-size: 32px;
-  font-weight: bold;
-  justify-content: center;
-  padding: 24px 12px 12px 0;
-  width: 100%;
-
-  & > div {
-    background-color: ${(props) => props.theme.textColor.base};
-    border-radius: 100%;
-    height: 20px;
-    margin: 6px 12px 0 0;
-    width: 20px;
-  }
-`
 
 const LogoSeparator = styled.div`
   padding: 12px 0 32px;
