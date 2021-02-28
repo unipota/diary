@@ -19,7 +19,7 @@ const AppHead: FC = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="うにぽたのろぐ" />
       {/* OGP */}
-      <meta property="og:title" content="unilog" />
+      <meta property="og:title" content="● unilog" />
       <meta property="og:description" content="うにぽたのろぐ" />
       <meta property="og:image" content="https://img.unipota.me/test" />
       <meta property="og:type" content="article" />
@@ -29,7 +29,7 @@ const AppHead: FC = () => {
       <meta name="twitter:site" content="@unipota" />
       <meta name="twitter:creator" content="@unipota" />
       <meta name="twitter:url" content="https://log.unipota.me" />
-      <meta name="twitter:title" content="unilog" />
+      <meta name="twitter:title" content="● unilog" />
       <meta name="twitter:description" content="うにぽたのろぐ" />
       <meta name="twitter:image" content="https://img.unipota.me/unilog" />
       {/* font */}
