@@ -23,10 +23,6 @@ const AppGlobal: FC<Props> = ({ children }) => {
             background-color: ${currentTheme.color.background};
             color: ${currentTheme.textColor.base};
             transition: background-color 1.2s ease-in;
-
-            & * {
-              transition: all 0.2s ease-in;
-            }
           }
         `}
       />
