@@ -87,7 +87,7 @@ const ReturnToTitle = styled.div`
   cursor: pointer;
   height: 20px;
   justify-self: start;
-  margin: 4px 0 4px 24px;
+  margin: 4px 0 4px 2px;
   width: 20px;
 `
 
