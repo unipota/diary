@@ -8,7 +8,7 @@ interface Props {
   title?: string
 }
 
-const AppHead: FC<Props> = ({ color, title = '● unilog' }) => {
+const AppHead: FC<Props> = ({ color, title = 'unilog' }) => {
   const router = useRouter()
   const imgQuery = `${encodeURIComponent(title)}?color=${encodeURIComponent(
     color
@@ -28,7 +28,7 @@ const AppHead: FC<Props> = ({ color, title = '● unilog' }) => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {/* <meta name="description" content="うにぽたのろぐ" /> */}
       {/* OGP */}
-      <meta property="og:title" content={title} />
+      <meta property="og:title" content={`● ${title}`} />
       {/* <meta property="og:description" content="うにぽたのろぐ" /> */}
       <meta property="og:image" content={imgPath} />
       <meta property="og:type" content="article" />
@@ -41,7 +41,7 @@ const AppHead: FC<Props> = ({ color, title = '● unilog' }) => {
         name="twitter:url"
         content={`https://log.unipota.me${router.asPath}`}
       />
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:title" content={`● ${title}`} />
       {/* <meta name="twitter:description" content="うにぽたのろぐ" /> */}
       <meta name="twitter:image" content={imgPath} />
       {/* font */}
