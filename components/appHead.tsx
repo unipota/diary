@@ -28,7 +28,7 @@ const AppHead: FC<Props> = ({ color, title = '● unilog' }) => {
       {/* <meta property="og:description" content="うにぽたのろぐ" /> */}
       <meta
         property="og:image"
-        content={`https://img.unipota.me/${title}?color=${color}`}
+        content={encodeURI(`https://img.unipota.me/${title}?color=${color}`)}
       />
       <meta property="og:type" content="article" />
       <meta property="og:locale" content="ja_JP" />
@@ -44,7 +44,7 @@ const AppHead: FC<Props> = ({ color, title = '● unilog' }) => {
       {/* <meta name="twitter:description" content="うにぽたのろぐ" /> */}
       <meta
         name="twitter:image"
-        content={`https://img.unipota.me/${title}?color=${color}`}
+        content={encodeURI(`https://img.unipota.me/${title}?color=${color}`)}
       />
       {/* font */}
       <link rel="preconnect" href="https://fonts.gstatic.com" />
