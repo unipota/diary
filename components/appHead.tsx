@@ -10,6 +10,8 @@ interface Props {
 
 const AppHead: FC<Props> = ({ color, title = '● unilog' }) => {
   const router = useRouter()
+  const imgQuery = encodeURIComponent(`/${title}?color=${color}`)
+  const imgPath = `https://img.unipota.me${imgQuery}`
   return (
     <Head>
       <link rel="icon" href="/favicon.svg" />
@@ -26,12 +28,7 @@ const AppHead: FC<Props> = ({ color, title = '● unilog' }) => {
       {/* OGP */}
       <meta property="og:title" content={title} />
       {/* <meta property="og:description" content="うにぽたのろぐ" /> */}
-      <meta
-        property="og:image"
-        content={`https://img.unipota.me/${title}?color=${encodeURIComponent(
-          color
-        )}`}
-      />
+      <meta property="og:image" content={imgPath} />
       <meta property="og:type" content="article" />
       <meta property="og:locale" content="ja_JP" />
       {/* Twitter */}
@@ -44,12 +41,7 @@ const AppHead: FC<Props> = ({ color, title = '● unilog' }) => {
       />
       <meta name="twitter:title" content={title} />
       {/* <meta name="twitter:description" content="うにぽたのろぐ" /> */}
-      <meta
-        name="twitter:image"
-        content={`https://img.unipota.me/${title}?color=${encodeURIComponent(
-          color
-        )}`}
-      />
+      <meta name="twitter:image" content={imgPath} />
       {/* font */}
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
