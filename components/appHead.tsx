@@ -17,10 +17,10 @@ const AppHead: FC = () => {
       /> */}
       <meta name="theme-color" content={theme.color.background} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content="うにぽたのろぐ" />
+      {/* <meta name="description" content="うにぽたのろぐ" /> */}
       {/* OGP */}
       <meta property="og:title" content="● unilog" />
-      <meta property="og:description" content="うにぽたのろぐ" />
+      {/* <meta property="og:description" content="うにぽたのろぐ" /> */}
       <meta property="og:image" content="https://img.unipota.me/test" />
       <meta property="og:type" content="article" />
       <meta property="og:locale" content="ja_JP" />
@@ -30,7 +30,7 @@ const AppHead: FC = () => {
       <meta name="twitter:creator" content="@unipota" />
       <meta name="twitter:url" content="https://log.unipota.me" />
       <meta name="twitter:title" content="● unilog" />
-      <meta name="twitter:description" content="うにぽたのろぐ" />
+      {/* <meta name="twitter:description" content="うにぽたのろぐ" /> */}
       <meta name="twitter:image" content="https://img.unipota.me/unilog" />
       {/* font */}
       <link rel="preconnect" href="https://fonts.gstatic.com" />
