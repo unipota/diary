@@ -1,4 +1,5 @@
 import { nord } from '@styles/theme'
+import { useRouter } from 'next/dist/client/router'
 import Head from 'next/head'
 import type { FC } from 'react'
 
@@ -8,6 +9,7 @@ interface Props {
 }
 
 const AppHead: FC<Props> = ({ color, title = '● unilog' }) => {
+  const router = useRouter()
   return (
     <Head>
       <link rel="icon" href="/favicon.svg" />
@@ -24,17 +26,26 @@ const AppHead: FC<Props> = ({ color, title = '● unilog' }) => {
       {/* OGP */}
       <meta property="og:title" content={title} />
       {/* <meta property="og:description" content="うにぽたのろぐ" /> */}
-      <meta property="og:image" content="https://img.unipota.me/test" />
+      <meta
+        property="og:image"
+        content={`https://img.unipota.me/${title}?color=${color}`}
+      />
       <meta property="og:type" content="article" />
       <meta property="og:locale" content="ja_JP" />
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@unipota" />
       <meta name="twitter:creator" content="@unipota" />
-      <meta name="twitter:url" content="https://log.unipota.me" />
+      <meta
+        name="twitter:url"
+        content={`https://log.unipota.me${router.asPath}`}
+      />
       <meta name="twitter:title" content={title} />
       {/* <meta name="twitter:description" content="うにぽたのろぐ" /> */}
-      <meta name="twitter:image" content="https://img.unipota.me/unilog" />
+      <meta
+        name="twitter:image"
+        content={`https://img.unipota.me/${title}?color=${color}`}
+      />
       {/* font */}
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
