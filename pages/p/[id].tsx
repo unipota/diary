@@ -74,10 +74,7 @@ const Title = styled.h1`
 `
 
 const TitleHeader = styled.div`
-  display: inline-grid;
   grid-template-columns: 60px 1fr 60px;
-  margin-bottom: 24px;
-  margin-top: 12px;
   width: 100%;
 `
 
@@ -92,18 +89,23 @@ const ReturnToTitle = styled.div`
 `
 
 const TitleDetail = styled.div`
-  justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 8px;
+`
+
+const TitleWrapper = styled.div`
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
 `
 
 const DateWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 12px;
-`
-
-const TitleWrapper = styled.div`
-  align-items: center;
-  display: inline-flex;
 `
 
 const Dot = styled.div`
