@@ -1,5 +1,4 @@
 import { ThemeContext } from '@components/appContext'
-import AppHead from '@components/appHead'
 import Layout from '@components/layout'
 import { Global, css, ThemeProvider } from '@emotion/react'
 import { LightTheme, DarkTheme } from '@styles/theme'
@@ -27,7 +26,6 @@ const AppGlobal: FC<Props> = ({ children }) => {
         `}
       />
       <ThemeProvider theme={currentTheme}>
-        <AppHead />
         <Layout>{children}</Layout>
       </ThemeProvider>
     </>

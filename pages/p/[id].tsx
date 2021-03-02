@@ -1,3 +1,4 @@
+import AppHead from '@components/appHead'
 import ContentRender from '@components/contentRender'
 import Date from '@components/date'
 import styled from '@emotion/styled'
@@ -39,11 +40,13 @@ export const getStaticProps = async ({
 }
 
 const Post: NextPage<Props> = ({ postData }) => {
+  const color = genColor(postData.id, 1, 0.76, 1)
   return (
     <>
       <Head>
         <title>{postData.title} : unilog</title>
       </Head>
+      <AppHead color={color} title={postData.title} />
       <article>
         <TitleHeader>
           <Link href="/">
@@ -53,7 +56,7 @@ const Post: NextPage<Props> = ({ postData }) => {
             <TitleWrapper>
               <Dot
                 css={{
-                  backgroundColor: genColor(postData.id, 1, 0.76, 1),
+                  backgroundColor: color,
                 }}
               />
               <Title>{postData.title}</Title>

@@ -1,12 +1,15 @@
-import { useTheme } from '@emotion/react'
 import { nord } from '@styles/theme'
-import NextHead from 'next/head'
+import Head from 'next/head'
 import type { FC } from 'react'
 
-const AppHead: FC = () => {
-  const theme = useTheme()
+interface Props {
+  color: string
+  title?: string
+}
+
+const AppHead: FC<Props> = ({ color, title = '● unilog' }) => {
   return (
-    <NextHead>
+    <Head>
       <link rel="icon" href="/favicon.svg" />
       <link rel="mask-icon" href="/favicon.svg" color={nord.nord3} />
       {/* <link
@@ -15,11 +18,11 @@ const AppHead: FC = () => {
         href="/feed"
         title="RSS2.0"
       /> */}
-      <meta name="theme-color" content={theme.color.background} />
+      <meta name="theme-color" content={color} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {/* <meta name="description" content="うにぽたのろぐ" /> */}
       {/* OGP */}
-      <meta property="og:title" content="● unilog" />
+      <meta property="og:title" content={title} />
       {/* <meta property="og:description" content="うにぽたのろぐ" /> */}
       <meta property="og:image" content="https://img.unipota.me/test" />
       <meta property="og:type" content="article" />
@@ -29,7 +32,7 @@ const AppHead: FC = () => {
       <meta name="twitter:site" content="@unipota" />
       <meta name="twitter:creator" content="@unipota" />
       <meta name="twitter:url" content="https://log.unipota.me" />
-      <meta name="twitter:title" content="● unilog" />
+      <meta name="twitter:title" content={title} />
       {/* <meta name="twitter:description" content="うにぽたのろぐ" /> */}
       <meta name="twitter:image" content="https://img.unipota.me/unilog" />
       {/* font */}
@@ -42,7 +45,7 @@ const AppHead: FC = () => {
         href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
         rel="stylesheet"
       />
-    </NextHead>
+    </Head>
   )
 }
 

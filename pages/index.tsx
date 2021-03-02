@@ -1,6 +1,8 @@
+import AppHead from '@components/appHead'
 import PostLink from '@components/postLink'
 import RoundedTriangle from '@components/roundedTriangle'
 import TitleLogo from '@components/titleLogo'
+import { useTheme } from '@emotion/react'
 import { getSortedPostsData } from '@lib/posts'
 import type { InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head'
@@ -18,8 +20,10 @@ export const getStaticProps = async () => {
 }
 
 const Home: NextPage<Props> = ({ allPostsData }) => {
+  const theme = useTheme()
   return (
     <div>
+      <AppHead color={theme.textColor.base} />
       <Head>
         <title>unilog</title>
       </Head>
