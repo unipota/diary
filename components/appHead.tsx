@@ -10,8 +10,8 @@ interface Props {
 
 const AppHead: FC<Props> = ({ color, title = '● unilog' }) => {
   const router = useRouter()
-  const imgQuery = encodeURIComponent(`/${title}?color=${color}`)
-  const imgPath = `https://img.unipota.me${imgQuery}`
+  const imgQuery = encodeURIComponent(`${title}?color=${color}`)
+  const imgPath = `https://img.unipota.me/${imgQuery}`
   return (
     <Head>
       <link rel="icon" href="/favicon.svg" />
