@@ -549,10 +549,10 @@
     remark "^13.0.0"
     unist-util-find-all-after "^3.0.2"
 
-"@thi.ng/api@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@thi.ng/api/-/api-7.0.0.tgz#751ab547be8105b500e558e2a50f2904231372a4"
-  integrity sha512-d5uKBurYINVTgYNIP49Zz1JORWgvVgRC5DSzw9l5G3rQ1LZC3SQ0iCQ0S3MAHQQvvu8VbIvyM9Mlw5vDCkFmzQ==
+"@thi.ng/api@^7.0.0", "@thi.ng/api@^7.1.3":
+  version "7.1.3"
+  resolved "https://registry.yarnpkg.com/@thi.ng/api/-/api-7.1.3.tgz#6e32cca31252437345fc1e13d5da2afa018f9dcc"
+  integrity sha512-a0Q0Y/DORKmRUPJx6s6n272MAhtWtQyAF51Rg8WXWFVXtknnke5iu3VkV+tdr6V3rcbymr9x8ZMntnTjYxIKgw==
 
 "@thi.ng/arrays@^0.10.3":
   version "0.10.3"
@@ -573,12 +573,12 @@
   dependencies:
     "@thi.ng/api" "^7.0.0"
 
-"@thi.ng/checks@^2.9.0":
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/@thi.ng/checks/-/checks-2.9.0.tgz#a4b1895eabc40868f24bdac544c25f61af918285"
-  integrity sha512-vXPzTyWnK5eLZJv2iFAPftfjcwssQCYvjJajb0pFWP9CD4NYp/r7aXXJbljLkrcwEjJdgZSvA1D4n5jQrxSRaQ==
+"@thi.ng/checks@^2.9.0", "@thi.ng/checks@^2.9.4":
+  version "2.9.4"
+  resolved "https://registry.yarnpkg.com/@thi.ng/checks/-/checks-2.9.4.tgz#6e298794610b46c23e655c074d5601fd60100f6e"
+  integrity sha512-iIGJadr30gpujUUSeb4nNvVjEGS1RN6IS/Z5D7lJjzcQL+kQXwveYGkQ5OjtouQ0T/Yo41DxsPVz8wNwAbdctw==
   dependencies:
-    tslib "2.0.1"
+    tslib "^2.1.0"
 
 "@thi.ng/color@^3.1.0":
   version "3.1.0"
@@ -632,10 +632,10 @@
   resolved "https://registry.yarnpkg.com/@thi.ng/errors/-/errors-1.2.27.tgz#ce5fb20008cc63361837f91bb868439b08b98499"
   integrity sha512-ay1oKA7VGU5a9B1JaUQ1UaYY44THEDJ17ym7yumD6NDbWNWLX7HwRLNX2VxupARW2JVJZXBxphsCY1WPoQmZ7A==
 
-"@thi.ng/hex@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@thi.ng/hex/-/hex-0.2.0.tgz#45dd244420e864981cb50f53dcefa49af792859a"
-  integrity sha512-MTo1lxFs4nh2xc3Lny4HYEwTrCGHdFFUZQbjfuTa1obFI8yvLC50rUpswU1GMa7FIcWoTCBpujva0eXP7RnUJQ==
+"@thi.ng/hex@^0.2.0", "@thi.ng/hex@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@thi.ng/hex/-/hex-0.2.4.tgz#c4a27955144bf9111ccda23b28a30ff6bf6f783d"
+  integrity sha512-N9ZSGDyvyECJPY38CL0Z2ZsikS14Jml6ZOPbLdLwdna0y80OOTGyqs9kCh6o/mEgDoGWHM8d16vKqJ615pOLWw==
 
 "@thi.ng/math@^3.2.0":
   version "3.2.0"
@@ -651,14 +651,14 @@
   dependencies:
     "@thi.ng/api" "^7.0.0"
 
-"@thi.ng/random@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@thi.ng/random/-/random-2.3.1.tgz#5c2d7e74e078d5ee49a4475ba51938445c45d144"
-  integrity sha512-msUl2lUA0nZyzLoxsknUb6lWXqv1x21csl8Bbc+bcEVvaCokHhCbJK0tRrsytMHI30A8Ga6+TkaNaiLeRCo1lA==
+"@thi.ng/random@^2.3.1", "@thi.ng/random@^2.3.5":
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/@thi.ng/random/-/random-2.3.5.tgz#056b8501a2b90fb80b0b4f0e52cc68ad3391e31b"
+  integrity sha512-sxI32hSkBBbZoAG7UQbi6Kl0G9QD3bAtGvdFCCU7kBjzb9RSJtSosYp4JdUpzhH748ANokmwL3YwsRQDHTmlgA==
   dependencies:
-    "@thi.ng/api" "^7.0.0"
-    "@thi.ng/checks" "^2.9.0"
-    "@thi.ng/hex" "^0.2.0"
+    "@thi.ng/api" "^7.1.3"
+    "@thi.ng/checks" "^2.9.4"
+    "@thi.ng/hex" "^0.2.4"
 
 "@thi.ng/strings@^1.15.0":
   version "1.15.0"
@@ -5347,15 +5347,15 @@ ts-pnp@^1.1.6:
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
 
-tslib@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.1.tgz#410eb0d113e5b6356490eec749603725b021b43e"
-  integrity sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
-
 tslib@^1.8.1:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
+
+tslib@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
 tsutils@^3.17.1:
   version "3.20.0"
