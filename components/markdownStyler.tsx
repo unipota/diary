@@ -11,6 +11,7 @@ const MarkdownStyler: FC<Props> = ({ children }) => {
 
 const Body = styled.div`
   padding: 1rem 0;
+
   h1,
   h2,
   h3,
@@ -22,23 +23,18 @@ const Body = styled.div`
   h1 {
     font-size: 2.5em;
   }
-
   h2 {
     font-size: 2em;
   }
-
   h3 {
     font-size: 1.5em;
   }
-
   h4 {
     font-size: 1.2em;
   }
-
   h5 {
     font-size: 1em;
   }
-
   h6 {
     font-size: 0.9em;
   }
@@ -51,7 +47,7 @@ const Body = styled.div`
     padding: 0;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.7rem;
     margin: 1rem 0;
@@ -123,16 +119,26 @@ const Body = styled.div`
     margin: 0 0 0 2em;
   }
   li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.7rem;
     list-style-position: inside;
     padding: 0.2rem 0;
+
+    &::before {
+      background-color: ${(props) => props.theme.textColor.base};
+      border-radius: 100%;
+      content: '';
+      display: inline-block;
+      height: 8px;
+      margin: 0 8px calc(1rem / 2 - 6px) 0;
+      width: 8px;
+    }
   }
   table {
     border-collapse: collapse;
     border-spacing: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.7rem;
     margin: 2rem 0;
@@ -146,7 +152,7 @@ const Body = styled.div`
     padding-right: 5rem;
   }
   th {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.7rem;
     padding-bottom: 1.5rem;
@@ -154,7 +160,7 @@ const Body = styled.div`
   a {
     color: ${(props) => props.theme.textColor.base};
 
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.7rem;
     margin: 2rem 0;
