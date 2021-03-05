@@ -10,7 +10,7 @@ const MarkdownStyler: FC<Props> = ({ children }) => {
 }
 
 const Body = styled.div`
-  padding: 1rem 0;
+  padding: 2rem 0 1rem;
 
   h1,
   h2,
@@ -50,7 +50,7 @@ const Body = styled.div`
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.7rem;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
   }
   strong {
     font-weight: 700;
@@ -109,8 +109,8 @@ const Body = styled.div`
   }
   ul,
   ol {
-    margin: 1em 0;
-    padding: 0 0 0 2em;
+    margin: 0.4em 0;
+    padding: 0 0 0 0.2em;
   }
   li p:last-child {
     margin: 0;
@@ -124,6 +124,7 @@ const Body = styled.div`
     line-height: 1.7rem;
     list-style-position: inside;
     padding: 0.2rem 0;
+    position: relative;
 
     &::before {
       background-color: ${(props) => props.theme.textColor.base};
@@ -131,9 +132,19 @@ const Body = styled.div`
       content: '';
       display: inline-block;
       height: 8px;
-      margin: 0 8px calc(1rem / 2 - 6px) 0;
+      left: 0;
+      /* margin: 0 0px calc(1rem / 2 - 6px) 0; */
+      position: absolute;
+      top: 0.8em;
+      transform: translateX(-200%);
       width: 8px;
     }
+  }
+  ul > li {
+    margin-left: 1em;
+  }
+  & > ul > li {
+    margin-top: 1em;
   }
   table {
     border-collapse: collapse;
