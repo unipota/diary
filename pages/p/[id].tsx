@@ -50,7 +50,10 @@ const Post: NextPage<Props> = ({ postData }) => {
       <article>
         <TitleHeader>
           <Link href="/">
-            <ReturnToTitle></ReturnToTitle>
+            <SiteTitle>
+              <ReturnToTitle></ReturnToTitle>
+              <p>unilog</p>
+            </SiteTitle>
           </Link>
           <TitleDetail>
             <TitleWrapper>
@@ -81,13 +84,20 @@ const TitleHeader = styled.div`
   width: 100%;
 `
 
+const SiteTitle = styled.a`
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 18px;
+  font-weight: bolder;
+`
+
 const ReturnToTitle = styled.div`
   background-color: ${(props) => props.theme.textColor.base};
   border-radius: 100%;
-  cursor: pointer;
   height: 20px;
   justify-self: start;
-  margin: 4px 0 4px 2px;
+  margin: 6px 8px 4px 2px;
   width: 20px;
 `
 
