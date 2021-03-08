@@ -28,7 +28,7 @@
     "clsx": "^1.1.1",
     "color2k": "^1.2.4",
     "cross-env": "^7.0.3",
-    "date-fns": "^2.18.0",
+    "date-fns": "^2.19.0",
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.2.0",
