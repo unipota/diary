@@ -18,7 +18,7 @@
     "@emotion/styled": "^11.1.5",
     "@fullhuman/postcss-purgecss": "^4.0.2",
     "@next/bundle-analyzer": "^10.0.9",
-    "@thi.ng/color": "^3.1.5",
+    "@thi.ng/color": "^3.1.6",
     "@thi.ng/random": "^2.3.1",
     "@trivago/prettier-plugin-sort-imports": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
@@ -51,7 +51,7 @@
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0",
-    "tailwindcss": "^2.0.3",
+    "tailwindcss": "^2.0.4",
     "twin.macro": "^2.3.0",
     "typescript": "^4.2.3",
     "zdog": "^1.1.2"
