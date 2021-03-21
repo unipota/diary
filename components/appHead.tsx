@@ -35,8 +35,8 @@ const AppHead: FC<Props> = ({ color, title = 'unilog' }) => {
         href="/favicon-16x16.png"
       />
       <link rel="manifest" href="/site.webmanifest" />
-      <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="theme-color" content="#ffffff" />
+      {/* <meta name="msapplication-TileColor" content="#da532c" /> */}
+      <meta name="theme-color" content={nord.nord3} />
       <link rel="mask-icon" href="/favicon.svg" color={nord.nord3} />
       {/* <link
         rel="alternate"
