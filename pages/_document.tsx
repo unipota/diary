@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="ja">
         <Head>
-          {GA_TRACKING_ID !== undefined ?? (
+          {GA_TRACKING_ID !== undefined ? (
             <>
               <script
                 async
@@ -25,6 +25,8 @@ export default class MyDocument extends Document {
                 }}
               />
             </>
+          ) : (
+            <></>
           )}
         </Head>
         <body>
