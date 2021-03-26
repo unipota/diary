@@ -594,10 +594,10 @@
   dependencies:
     tslib "^2.1.0"
 
-"@thi.ng/color@^3.1.7":
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/@thi.ng/color/-/color-3.1.7.tgz#abef582f7da8fe9a1d2cf4a24b504501577be65c"
-  integrity sha512-1NFLfL6cOQGsAFzHUwM5KK75FVTONTGEdjb1N1zgmZwQMSoEs2jwJsF2z4t68oLNFgxwbmax9KTO83pmFxjOow==
+"@thi.ng/color@^3.1.8":
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/@thi.ng/color/-/color-3.1.8.tgz#f7a831a99549c7dd0a4e023327714c2ea03d132c"
+  integrity sha512-rQy3OtYRXGXbTwBMRqAqspMjMR/KvOTn9hiD2wx6Pg0aXwj38EnBP2/dI1YseBICLpHqQ2RCt3LZ5S7G8ObGJQ==
   dependencies:
     "@thi.ng/api" "^7.1.4"
     "@thi.ng/arrays" "^0.10.9"
@@ -609,7 +609,7 @@
     "@thi.ng/errors" "^1.3.0"
     "@thi.ng/math" "^3.3.0"
     "@thi.ng/random" "^2.3.6"
-    "@thi.ng/strings" "^2.0.0"
+    "@thi.ng/strings" "^2.1.0"
     "@thi.ng/transducers" "^7.6.7"
     "@thi.ng/vectors" "^5.1.5"
 
@@ -674,10 +674,10 @@
     "@thi.ng/checks" "^2.9.5"
     "@thi.ng/hex" "^0.2.5"
 
-"@thi.ng/strings@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@thi.ng/strings/-/strings-2.0.0.tgz#9f01d0d02fa73b3667034fb9576f0c73574ac00f"
-  integrity sha512-sHJY4jfenMhJEHHpaBcRramP32qLK2o1f7O+u5gI8ldbdJOVz7qt4ASdeVQ6KtIJcwaCPqzOxZXW62w3Vdkr6A==
+"@thi.ng/strings@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@thi.ng/strings/-/strings-2.1.0.tgz#8e5c8dbc02566b28c5395eccd37511a791e51619"
+  integrity sha512-+XVfKoZKx7IpJfsGU/P9rCpNhcDz4DWsTH1pbdMrss2zsHdcXuY3GGWSqbu272ydY8N4gOJ/4oIy5gzJsG7Fqg==
   dependencies:
     "@thi.ng/api" "^7.1.4"
     "@thi.ng/errors" "^1.3.0"
