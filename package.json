@@ -18,8 +18,8 @@
     "@emotion/styled": "^11.1.5",
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "@next/bundle-analyzer": "^10.0.9",
-    "@tailwindcss/jit": "^0.1.7",
-    "@thi.ng/color": "^3.1.7",
+    "@tailwindcss/jit": "^0.1.9",
+    "@thi.ng/color": "^3.1.8",
     "@thi.ng/random": "^2.3.1",
     "@trivago/prettier-plugin-sort-imports": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
@@ -33,7 +33,7 @@
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.2.0",
-    "eslint-plugin-react": "^7.23.0",
+    "eslint-plugin-react": "^7.23.1",
     "front-matter": "^4.0.2",
     "next": "^10.0.9",
     "postcss": "^8.2.8",
@@ -58,7 +58,7 @@
     "zdog": "^1.1.2"
   },
   "devDependencies": {
-    "@types/node": "^14.14.35",
+    "@types/node": "^14.14.36",
     "@types/react": "^17.0.3",
     "@types/react-syntax-highlighter": "^13.5.0",
     "@types/rss": "^0.0.28",
