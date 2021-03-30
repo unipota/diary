@@ -35,7 +35,7 @@
     "eslint-plugin-prettier": "^3.2.0",
     "eslint-plugin-react": "^7.23.1",
     "front-matter": "^4.0.2",
-    "next": "^10.0.9",
+    "next": "^10.1.2",
     "postcss": "^8.2.8",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
