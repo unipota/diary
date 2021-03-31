@@ -650,10 +650,10 @@
   dependencies:
     tslib "^2.1.0"
 
-"@thi.ng/color@^3.1.10":
-  version "3.1.10"
-  resolved "https://registry.yarnpkg.com/@thi.ng/color/-/color-3.1.10.tgz#19be93957f1beb4452870af23d1f44112e50d34d"
-  integrity sha512-28I7pHhW/dl/6CVNFYxaYhOcc06R4GHsZdb3iv8/kAEC4Jirv3jZM+DleC+O+4Py30wl/IUeXrzsvGIpoqpL2w==
+"@thi.ng/color@^3.1.11":
+  version "3.1.11"
+  resolved "https://registry.yarnpkg.com/@thi.ng/color/-/color-3.1.11.tgz#bfccc16fc31d89884ddfb6ed8d6586ca37a61b7f"
+  integrity sha512-1UTbi/+4eIkXPrEthkPKo05Om3ZNWoztVhTyPSE6Yj4odUnyWX0c9uHVWt5XO6Oj0BfQHS/zdoixjP9S3X2l7Q==
   dependencies:
     "@thi.ng/api" "^7.1.4"
     "@thi.ng/arrays" "^0.10.9"
@@ -667,7 +667,7 @@
     "@thi.ng/random" "^2.3.6"
     "@thi.ng/strings" "^2.1.0"
     "@thi.ng/transducers" "^7.6.9"
-    "@thi.ng/vectors" "^5.1.7"
+    "@thi.ng/vectors" "^5.2.0"
 
 "@thi.ng/compare@^1.3.28":
   version "1.3.28"
@@ -754,10 +754,10 @@
     "@thi.ng/math" "^3.3.0"
     "@thi.ng/random" "^2.3.6"
 
-"@thi.ng/vectors@^5.1.7":
-  version "5.1.7"
-  resolved "https://registry.yarnpkg.com/@thi.ng/vectors/-/vectors-5.1.7.tgz#e92f74952fffb5715c9352ab685fe40e3e74c299"
-  integrity sha512-Csd8AAJrf25w+UNkkqKaStHTVjxWB49re1Tz6QLXbLrxecH90PlHXEzk0KxH+RPZIsdANmUQygichVttkSuNmg==
+"@thi.ng/vectors@^5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@thi.ng/vectors/-/vectors-5.2.0.tgz#a2fcbf672f3bed424af0b358fb25f524e3c860aa"
+  integrity sha512-1OZLVhJ+ZnzKbN87rHmdSRglhctBZGAt4vTK/ySfCpKb85+Vm5K6Gihg6nzjP+uTluVLgRl2YnHqaVu5l3CrVg==
   dependencies:
     "@thi.ng/api" "^7.1.4"
     "@thi.ng/binary" "^2.2.4"
