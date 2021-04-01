@@ -13,6 +13,7 @@ module.exports = bundleAnalyzer({
   },
   future: {
     webpack5: true,
+    strictPostcssConfiguration: true,
   },
   experimental: {
     optimizeFonts: true,
