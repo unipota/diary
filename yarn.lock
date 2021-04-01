@@ -769,10 +769,10 @@
     "@thi.ng/random" "^2.3.6"
     "@thi.ng/transducers" "^7.6.9"
 
-"@trivago/prettier-plugin-sort-imports@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-2.0.1.tgz#0caa026293f5c55ae53fd7a0d88720a7d44a3bf4"
-  integrity sha512-8yqigzHawuTYhVWdeQ/TBbk1kmPnAndx0Qh1DcCV5T9F/jWx1voz9mUtpZHi6M5MS25oabpJmx4Y8bD/0Pw+Xg==
+"@trivago/prettier-plugin-sort-imports@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-2.0.2.tgz#62c52462220df6fb35815aaefeaa383fc2535ab1"
+  integrity sha512-esk6vplzXYwXQs079wBbKog4AFuZfxpJU+MygiijV0wbAibI0tEm+diFFhYP7B2lAaKKdU4+w+BW+McNZCw9HA==
   dependencies:
     "@babel/core" "7.13.10"
     "@babel/generator" "7.13.9"
