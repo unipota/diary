@@ -51,7 +51,7 @@ const Post: NextPage<Props> = ({ postData }) => {
         <TitleHeader>
           <Link href="/">
             <SiteTitle>
-              <ReturnToTitle></ReturnToTitle>
+              <ReturnToTitle />
               <p>unilog</p>
             </SiteTitle>
           </Link>
@@ -69,7 +69,7 @@ const Post: NextPage<Props> = ({ postData }) => {
             </DateWrapper>
           </TitleDetail>
         </TitleHeader>
-        <ContentRender content={postData.content}></ContentRender>
+        <ContentRender content={postData.content} />
       </article>
     </>
   )
