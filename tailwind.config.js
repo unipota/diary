@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: ['*.tsx', './pages/**/*.js', './components/**/*.js'],
   darkMode: 'media',
   theme: {
