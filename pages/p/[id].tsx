@@ -95,10 +95,10 @@ const SiteTitle = styled.a`
 const ReturnToTitle = styled.div`
   background-color: ${(props) => props.theme.textColor.base};
   border-radius: 100%;
-  height: 20px;
+  height: 14px;
   justify-self: start;
   margin: 6px 8px 4px 2px;
-  width: 20px;
+  width: 14px;
 `
 
 const TitleDetail = styled.div`
