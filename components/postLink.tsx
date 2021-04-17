@@ -43,11 +43,13 @@ const Container = styled.a`
 const Body = styled.div`
   display: flex;
   flex-direction: column;
+  flex-shrink: 1;
   margin: 0 0 0 12px;
 `
 
 const Dot = styled.div`
   border-radius: 100%;
+  flex-shrink: 0;
   height: 20px;
   margin: 4px 0 0;
   width: 20px;
