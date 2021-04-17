@@ -77,6 +77,8 @@ const Post: NextPage<Props> = ({ postData }) => {
 
 const Title = styled.h1`
   ${tw`text-lg font-bold`}
+  text-align: center;
+  word-break: keep-all;
 `
 
 const TitleHeader = styled.div`
