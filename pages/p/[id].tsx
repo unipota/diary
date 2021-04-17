@@ -123,6 +123,7 @@ const DateWrapper = styled.div`
 
 const Dot = styled.div`
   border-radius: 100%;
+  flex-shrink: 0;
   height: 20px;
   margin: 0 12px 0 0;
   width: 20px;
