@@ -24,7 +24,8 @@ const CodeBlock: FC<Props> = ({
       customStyle={{
         borderRadius: 12,
         padding: '1rem',
-        marginBottom: '1rem',
+        marginTop: '2rem',
+        marginBottom: '2rem',
         backgroundColor: theme.color.placeholder,
       }}
     >

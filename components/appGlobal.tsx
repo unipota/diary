@@ -23,6 +23,10 @@ const AppGlobal: FC<Props> = ({ children }) => {
             color: ${currentTheme.textColor.base};
             transition: background-color 0.4s ease;
           }
+          .spotify {
+            border-radius: 12px;
+            margin: 48px auto 0;
+          }
         `}
       />
       <ThemeProvider theme={currentTheme}>

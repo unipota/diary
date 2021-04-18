@@ -43,7 +43,7 @@ const Body = styled.div`
     border-top: 2px solid ${(props) => props.theme.color.shade};
     display: block;
     height: 1px;
-    margin: 1em 0;
+    margin: 4em 0;
     padding: 0;
   }
   p {
@@ -175,6 +175,7 @@ const Body = styled.div`
     font-weight: 300;
     line-height: 1.7rem;
     margin: 2rem 0;
+    text-decoration: underline;
   }
   img {
     border: 0;
