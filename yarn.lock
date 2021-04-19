@@ -643,10 +643,10 @@
   dependencies:
     tslib "^2.1.0"
 
-"@thi.ng/color@^3.1.12":
-  version "3.1.12"
-  resolved "https://registry.yarnpkg.com/@thi.ng/color/-/color-3.1.12.tgz#ab44ea84ca3ce2aecb31ed35c7c22f08c122998a"
-  integrity sha512-pJuth2XY+4JvUnBO641hsYZwp1zjg4kzV13XKHiDgBQ7vq6a/ZjmuOnw2n0LUCYH2JBcnkz9IUFzw3RPJcPGvA==
+"@thi.ng/color@^3.1.13":
+  version "3.1.13"
+  resolved "https://registry.yarnpkg.com/@thi.ng/color/-/color-3.1.13.tgz#62effe9472cb9996ed500175a97f9f7fce1ab6f7"
+  integrity sha512-L740kkHA/kVdr7yTZAtJ5wYOQmb5GG9J48SGF6ZMO5LN6N5RmOWb62heSsb3HH0HNMZtasONmzioEEDWUt0uGQ==
   dependencies:
     "@thi.ng/api" "^7.1.4"
     "@thi.ng/arrays" "^0.10.10"
@@ -659,8 +659,8 @@
     "@thi.ng/math" "^3.4.0"
     "@thi.ng/random" "^2.3.7"
     "@thi.ng/strings" "^2.1.0"
-    "@thi.ng/transducers" "^7.6.10"
-    "@thi.ng/vectors" "^5.2.1"
+    "@thi.ng/transducers" "^7.7.0"
+    "@thi.ng/vectors" "^5.2.2"
 
 "@thi.ng/compare@^1.3.28":
   version "1.3.28"
@@ -733,10 +733,10 @@
     "@thi.ng/hex" "^0.2.5"
     "@thi.ng/memoize" "^2.1.14"
 
-"@thi.ng/transducers@^7.6.10":
-  version "7.6.10"
-  resolved "https://registry.yarnpkg.com/@thi.ng/transducers/-/transducers-7.6.10.tgz#a276303d3d9e829605f46e081d9d195e586f1f23"
-  integrity sha512-Y0v+ZDQLeyOdMkbQgda7Z79G74m0Uhrudv8SmLyeHirRJErkUv/FaTjQWHOICz0nrR+itC2E4k6SopxmEeU0Ww==
+"@thi.ng/transducers@^7.7.0":
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/@thi.ng/transducers/-/transducers-7.7.0.tgz#f74ce4ccd5ed401f65c184fe1801c871e8f7f4ff"
+  integrity sha512-iWowri3upv8k0Q/C6GTArOK67u/3twISFlc0pZSszObr1o5Wji+qQNjpvgZFOYIZw6OI/RDaPtS5NjY6D86KCQ==
   dependencies:
     "@thi.ng/api" "^7.1.4"
     "@thi.ng/arrays" "^0.10.10"
@@ -747,10 +747,10 @@
     "@thi.ng/math" "^3.4.0"
     "@thi.ng/random" "^2.3.7"
 
-"@thi.ng/vectors@^5.2.1":
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/@thi.ng/vectors/-/vectors-5.2.1.tgz#4f5b37efbaaa6f9d0bcd0c40648c2a2c61f4a9c1"
-  integrity sha512-GKpp0vdr9B+P66Wf3mFVbzlrHiSsYMkDAKrrT8rc/jK8+Q/WU90K6yluKC4ZpIrCKbosFX+Z3G6zDZvw/Be7Ow==
+"@thi.ng/vectors@^5.2.2":
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/@thi.ng/vectors/-/vectors-5.2.2.tgz#ab6fb425aa68ee7ff119584de0dc3e6aa47e9cca"
+  integrity sha512-10GBG18HdFLn4Ui1RUjD9seaRXXHK9Uk6iRgXTikxD34b1Uz5Y+hOsYGwJ+zqu7DmvYKg4QBd+VMPlfOKxJXkw==
   dependencies:
     "@thi.ng/api" "^7.1.4"
     "@thi.ng/binary" "^2.2.4"
@@ -760,7 +760,7 @@
     "@thi.ng/math" "^3.4.0"
     "@thi.ng/memoize" "^2.1.14"
     "@thi.ng/random" "^2.3.7"
-    "@thi.ng/transducers" "^7.6.10"
+    "@thi.ng/transducers" "^7.7.0"
 
 "@trivago/prettier-plugin-sort-imports@^2.0.2":
   version "2.0.2"
@@ -5478,10 +5478,10 @@ tty-browserify@0.0.1:
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.1.tgz#3f05251ee17904dfd0677546670db9651682b811"
   integrity sha512-C3TaO7K81YvjCgQH9Q1S3R3P3BtN3RIM8n+OvX4il1K1zgE8ZhI0op7kClgkxtutIE8hQrcrHBXvIheqKUUCxw==
 
-twin.macro@^2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/twin.macro/-/twin.macro-2.3.2.tgz#c36b35e44a2cb3618fce1122986a9b7ee610c41f"
-  integrity sha512-tR2VHr/7r1HxGWYHSs3+cxhUsHd9DDPaaJ4EFZQ4uBeDhP+0irMbRXCPxAADvTY5vWW89pEK1F+ka3F8SY+2rw==
+twin.macro@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/twin.macro/-/twin.macro-2.3.3.tgz#413d0bf7edc6a1fdfd6e18f10feaefd01aeac89b"
+  integrity sha512-98avi7wzfjNVR5qQcxRQwCg9CCLgdWhinilmASC+IXbkR/y6h5iHSp9uXdNDPMta/Xz5wyk0MJ8xA2zhhHMzZQ==
   dependencies:
     "@babel/parser" "^7.12.5"
     babel-plugin-macros "^2.8.0"
