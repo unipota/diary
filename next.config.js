@@ -1,11 +1,13 @@
+/** @type {import('next/dist/next-server/server/config-shared').NextConfig} */
 /* eslint-disable
    @typescript-eslint/no-var-requires
 */
+
 const bundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
-module.exports = bundleAnalyzer({
+const config = bundleAnalyzer({
   trailingSlash: false,
   reactStrictMode: true,
   typescript: {
@@ -19,3 +21,5 @@ module.exports = bundleAnalyzer({
     optimizeFonts: true,
   },
 })
+
+module.exports = config

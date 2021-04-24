@@ -1,4 +1,6 @@
-module.exports = {
+/** @type {import('@types/tailwindcss/tailwind-config').TailwindConfig} */
+
+const config = {
   mode: 'jit',
   purge: ['*.tsx', './pages/**/*.js', './components/**/*.js'],
   darkMode: 'media',
@@ -22,3 +24,5 @@ module.exports = {
   },
   plugins: [],
 }
+
+module.exports = config

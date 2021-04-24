@@ -1,4 +1,6 @@
-module.exports = {
+/** @type {import('@typescript-eslint/experimental-utils').TSESLint.Linter.Config} */
+
+const config = {
   ignorePatterns: ['!.eslintrc.js', '!.prettierrc.js'],
   extends: [
     'eslint:recommended',
@@ -40,3 +42,5 @@ module.exports = {
     ],
   },
 }
+
+module.exports = config
