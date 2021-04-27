@@ -5430,7 +5430,7 @@ table@^6.0.4, table@^6.5.1:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
 
-tailwindcss@^2.0.1, tailwindcss@^2.1.2:
+tailwindcss@^2.1.0, tailwindcss@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.1.2.tgz#29402bf73a445faedd03df6d3b177e7b52b7c4a1"
   integrity sha512-T5t+wwd+/hsOyRw2HJuFuv0LTUm3MUdHm2DJ94GPVgzqwPPFa9XxX0KlwLWupUuiOUj6uiKURCzYPHFcuPch/w==
@@ -5574,12 +5574,13 @@ tty-browserify@0.0.1:
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.1.tgz#3f05251ee17904dfd0677546670db9651682b811"
   integrity sha512-C3TaO7K81YvjCgQH9Q1S3R3P3BtN3RIM8n+OvX4il1K1zgE8ZhI0op7kClgkxtutIE8hQrcrHBXvIheqKUUCxw==
 
-twin.macro@^2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/twin.macro/-/twin.macro-2.3.2.tgz#c36b35e44a2cb3618fce1122986a9b7ee610c41f"
-  integrity sha512-tR2VHr/7r1HxGWYHSs3+cxhUsHd9DDPaaJ4EFZQ4uBeDhP+0irMbRXCPxAADvTY5vWW89pEK1F+ka3F8SY+2rw==
+twin.macro@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/twin.macro/-/twin.macro-2.4.0.tgz#ec78a7ce844d94f6a6001be233a8903c2dd523da"
+  integrity sha512-1iRIn/cKvsyGkZclyeRKVP+UaDIqCPcQrT5nLjIB+4ZxumY3CRRA1Q3QYBu3Mpo2+HrnjThJcJk9iurpa05XQg==
   dependencies:
     "@babel/parser" "^7.12.5"
+    autoprefixer "^10.2.5"
     babel-plugin-macros "^2.8.0"
     chalk "^4.1.0"
     clean-set "^1.1.1"
@@ -5590,7 +5591,7 @@ twin.macro@^2.3.2:
     lodash.merge "^4.6.2"
     postcss "^8.1.8"
     string-similarity "^4.0.3"
-    tailwindcss "^2.0.1"
+    tailwindcss "^2.1.0"
     timsort "^0.3.0"
 
 type-check@^0.4.0, type-check@~0.4.0:
