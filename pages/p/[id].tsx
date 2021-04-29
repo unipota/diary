@@ -21,7 +21,14 @@ type PostSlug = {
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getAllPostIds()
+  const ids = getAllPostIds()
+  const paths = ids.map((id) => {
+    return {
+      params: {
+        id,
+      },
+    }
+  })
   return {
     paths,
     fallback: false,
@@ -41,6 +48,7 @@ export const getStaticProps = async ({
 
 const Post: NextPage<Props> = ({ postData }) => {
   const color = genColor(postData.id, 1, 0.76, 1)
+
   return (
     <>
       <Head>
