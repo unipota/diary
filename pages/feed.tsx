@@ -19,7 +19,7 @@ async function generateFeedXml() {
       title: post.title,
       description: content,
       date: new Date(post.date),
-      url: `/${post.id}`,
+      url: `https://log.unipota.me/p/${post.id}`,
     }
   })
 
