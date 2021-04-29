@@ -17,9 +17,7 @@ const config = bundleAnalyzer({
     webpack5: true,
     strictPostcssConfiguration: true,
   },
-  experimental: {
-    optimizeFonts: true,
-  },
+  experimental: {},
 })
 
 module.exports = config

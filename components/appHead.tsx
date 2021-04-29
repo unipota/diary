@@ -38,12 +38,12 @@ const AppHead: FC<Props> = ({ color, title = 'unilog' }) => {
       {/* <meta name="msapplication-TileColor" content="#da532c" /> */}
       <meta name="theme-color" content={nord.nord3} />
       <link rel="mask-icon" href="/favicon.svg" color={nord.nord3} />
-      {/* <link
+      <link
         rel="alternate"
         type="application/rss+xml"
         href="/feed"
         title="RSS2.0"
-      /> */}
+      />
       <meta name="theme-color" content={color} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {/* <meta name="description" content="うにぽたのろぐ" /> */}

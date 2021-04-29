@@ -1,40 +1,47 @@
+import { getPostData, getSortedPostsData } from '@lib/posts'
 import { GetServerSidePropsContext } from 'next'
 import RSS from 'rss'
 
 async function generateFeedXml() {
   const feed = new RSS({
-    title: 'タイトル',
-    description: '説明',
-    site_url: 'サイトのURL',
-    feed_url: 'フィードページのURL',
+    title: 'unilog',
+    description: 'うにぽたのログ',
+    site_url: 'https://log.unipota.me',
+    feed_url: 'https://log.unipota.me/feed',
     language: 'ja',
   })
 
-  // 例としてpostsを含めるイメージ
-  // このあたりの書き方はライブラリのドキュメントを参考にしてください
-  // const { posts } = await getPosts()
-  // posts?.forEach((post) => {
-  //   feed.item({
-  //     title: post.title,
-  //     description: post.description,
-  //     date: new Date(post.createdAt),
-  //     url: `/${post.path}`,
-  //   })
-  // })
+  const posts = getSortedPostsData()
+  const items = posts.map((post) => {
+    const { content } = getPostData(post.id)
 
-  // XML形式の文字列にする
+    return {
+      title: post.title,
+      description: content,
+      date: new Date(post.date),
+      url: `/${post.id}`,
+    }
+  })
+
+  items.forEach((item) => {
+    feed.item(item)
+  })
+
+  console.log(feed)
+
   return feed.xml()
 }
 
 export const getServerSideProps = async ({
   res,
 }: GetServerSidePropsContext) => {
-  const xml = await generateFeedXml() // フィードのXMLを生成する（後述）
+  const xml = await generateFeedXml()
 
   res.statusCode = 200
   res.setHeader('Cache-Control', 's-maxage=86400, stale-while-revalidate') // 24時間キャッシュする
   res.setHeader('Content-Type', 'text/xml')
-  res.end(xml)
+  res.write(xml)
+  res.end()
 
   return {
     props: {},
