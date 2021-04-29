@@ -27,8 +27,6 @@ async function generateFeedXml() {
     feed.item(item)
   })
 
-  console.log(feed)
-
   return feed.xml()
 }
 

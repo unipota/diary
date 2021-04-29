@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://log.unipota.me
+
+# Sitemaps
+Sitemap: https://log.unipota.me/sitemap.xml
