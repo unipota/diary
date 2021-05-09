@@ -1,7 +1,12 @@
 import styled from '@emotion/styled'
 import { NormalComponent } from 'react-markdown/src/ast-to-react'
 
-const ImageBlock: NormalComponent = ({ src, alt }) => {
+interface Props {
+  src: string
+  alt: string
+}
+
+const ImageBlock: React.FC<Props> = ({ src, alt }) => {
   return (
     <Figure>
       {/* <a href={`${src}.jpg`} target="_blank" rel="noopener noreferrer"> */}

@@ -1,27 +1,17 @@
-import CodeBlock from './codeBlock'
-import ImageBlock from './imageBlock'
 import MarkdownStyler from './markdownStyler'
+import renderMarkdown from '@lib/markdown'
 import type { FC } from 'react'
-import ReactMarkdown from 'react-markdown'
-import rehypeRaw from 'rehype-raw'
 
 interface Props {
   content: string
 }
 
 const ContentRender: FC<Props> = ({ content }) => {
+  const renderedHtml = renderMarkdown(content)
   return (
-    <>
-      <MarkdownStyler>
-        <ReactMarkdown
-          skipHtml={false}
-          rehypePlugins={[rehypeRaw]}
-          components={{ code: CodeBlock, img: ImageBlock }}
-        >
-          {content}
-        </ReactMarkdown>
-      </MarkdownStyler>
-    </>
+    <MarkdownStyler>
+      <div dangerouslySetInnerHTML={{ __html: renderedHtml }} />
+    </MarkdownStyler>
   )
 }
 
