@@ -38,7 +38,7 @@ export const getServerSideProps = async ({
   const xml = await generateFeedXml()
 
   res.statusCode = 200
-  res.setHeader('Cache-Control', 's-maxage=86400, stale-while-revalidate') // 24時間キャッシュする
+  res.setHeader('Cache-Control', 's-maxage=0, stale-while-revalidate') // 24時間キャッシュする
   res.setHeader('Content-Type', 'text/xml')
   res.write(xml)
   res.end()
