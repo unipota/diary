@@ -1,3 +1,4 @@
+import renderMarkdown from '@lib/markdown'
 import { getPostData, getSortedPostsData } from '@lib/posts'
 import { GetServerSidePropsContext } from 'next'
 import RSS from 'rss'
@@ -14,10 +15,11 @@ async function generateFeedXml() {
   const posts = getSortedPostsData()
   const items = posts.map((post) => {
     const { content } = getPostData(post.id)
+    const html = renderMarkdown(content)
 
     return {
       title: post.title,
-      description: content,
+      description: escape(html),
       date: new Date(post.date),
       url: `https://log.unipota.me/p/${post.id}`,
     }

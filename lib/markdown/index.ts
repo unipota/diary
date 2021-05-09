@@ -1,14 +1,10 @@
-import markdownIt from 'markdown-it'
+import renderer from './renderer'
+import marked from 'marked'
 
-const md = markdownIt({
-  html: true,
-  breaks: true,
-  linkify: true,
-})
+marked.use({ renderer })
 
-const markdownToHtml = (text: string): string => {
-  if (!(text && text.length)) return ''
-  return md.render(text)
+const renderMarkdown = (content: string) => {
+  return marked(content)
 }
 
-export default markdownToHtml
+export default renderMarkdown
