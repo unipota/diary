@@ -1,10 +1,10 @@
 import AppHead from '@components/appHead'
 import PostLink from '@components/postLink'
 import RoundedTriangle from '@components/roundedTriangle'
-import TitleLogo from '@components/titleLogo'
 import { useTheme } from '@emotion/react'
 import { getSortedPostsData } from '@lib/posts'
 import type { InferGetStaticPropsType, NextPage } from 'next'
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import { styled } from 'twin.macro'
 
@@ -18,6 +18,7 @@ export const getStaticProps = async () => {
     },
   }
 }
+const TitleLogo = dynamic(() => import('../components/titleLogo'))
 
 const Home: NextPage<Props> = ({ allPostsData }) => {
   const theme = useTheme()
