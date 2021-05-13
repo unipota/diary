@@ -1,5 +1,6 @@
 import renderMarkdown from '@lib/markdown'
 import { getPostData, getSortedPostsData } from '@lib/posts'
+import { escape } from 'html-escaper'
 import { GetServerSidePropsContext } from 'next'
 import RSS from 'rss'
 
