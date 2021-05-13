@@ -185,7 +185,11 @@ const Body = styled.div`
     vertical-align: middle;
   }
   code {
+    background: ${(props) => props.theme.color.shade};
+    border-radius: 8px;
     font-size: 1rem;
+    margin: 0 0.2rem;
+    padding: 0.2rem 0.4rem;
   }
 `
 
