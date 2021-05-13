@@ -39,7 +39,7 @@
     "html-escaper": "^3.0.3",
     "marked": "^2.0.3",
     "next": "^10.2.0",
-    "next-sitemap": "^1.6.29",
+    "next-sitemap": "^1.6.57",
     "postcss": "^8.2.15",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
