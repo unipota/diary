@@ -4,6 +4,12 @@
     alt="GitHub Actions workflow status"/></a>
 
 Next.js on Vercelで構成されたシンプルなMarkdownブログです。
+
+- :rocket: Next.js + TypeScript
+- :art: Twin + Emotion + Tailwind
+- :dog: Zdog
+
+
 ## dev
 - yarn dev
 

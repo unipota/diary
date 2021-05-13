@@ -41,7 +41,7 @@ const AppHead: FC<Props> = ({ color, title = 'unilog' }) => {
       <link
         rel="alternate"
         type="application/rss+xml"
-        href="/feed"
+        href="/rss"
         title="RSS2.0"
       />
       <meta name="theme-color" content={color} />
