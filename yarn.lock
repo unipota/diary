@@ -831,10 +831,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^17.0.5":
-  version "17.0.5"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.5.tgz#3d887570c4489011f75a3fc8f965bf87d09a1bea"
-  integrity sha512-bj4biDB9ZJmGAYTWSKJly6bMr4BLUiBrx9ujiJEoP9XIDY9CTaPGxE5QWN/1WjpPLzYF7/jRNnV2nNxNe970sw==
+"@types/react@*", "@types/react@^17.0.6":
+  version "17.0.6"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.6.tgz#0ec564566302c562bf497d73219797a5e0297013"
+  integrity sha512-u/TtPoF/hrvb63LdukET6ncaplYsvCvmkceasx8oG84/ZCsoLxz9Z/raPBP4lTAiWW1Jb889Y9svHmv8R26dWw==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -1182,10 +1182,10 @@ babel-plugin-macros@^2.6.1, babel-plugin-macros@^2.8.0:
     cosmiconfig "^6.0.0"
     resolve "^1.12.0"
 
-babel-plugin-macros@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-macros/-/babel-plugin-macros-3.0.1.tgz#0d412d68f5b3d1b64358f24ab099bd148724e2a9"
-  integrity sha512-CKt4+Oy9k2wiN+hT1uZzOw7d8zb1anbQpf7KLwaaXRCi/4pzKdFKHf7v5mvoPmjkmxshh7eKZQuRop06r5WP4w==
+babel-plugin-macros@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-macros/-/babel-plugin-macros-3.1.0.tgz#9ef6dc74deb934b4db344dc973ee851d148c50c1"
+  integrity sha512-Cg7TFGpIr01vOQNODXOOaGz2NpCU5gl8x1qJFbb6hbZxR7XrcE2vtbAsTAbJ7/xwJtUuJEw8K8Zr/AE0LHlesg==
   dependencies:
     "@babel/runtime" "^7.12.5"
     cosmiconfig "^7.0.0"
@@ -1756,10 +1756,10 @@ data-uri-to-buffer@3.0.1:
   resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-3.0.1.tgz#594b8973938c5bc2c33046535785341abc4f3636"
   integrity sha512-WboRycPNsVw3B3TL559F7kuBUM4d8CgMEvk6xEJlOp7OBPjt6G7z8WMWlD2rOFZLk6OYfFIUGsCOWzcQH9K2og==
 
-date-fns@^2.21.1:
-  version "2.21.1"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.21.1.tgz#679a4ccaa584c0706ea70b3fa92262ac3009d2b0"
-  integrity sha512-m1WR0xGiC6j6jNFAyW4Nvh4WxAi4JF4w9jRJwSI8nBmNcyZXPcP9VUQG+6gHQXAmqaGEKDKhOqAtENDC941UkA==
+date-fns@^2.21.3:
+  version "2.21.3"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.21.3.tgz#8f5f6889d7a96bbcc1f0ea50239b397a83357f9b"
+  integrity sha512-HeYdzCaFflc1i4tGbj7JKMjM4cKGYoyxwcIIkHzNgCkX8xXDNJDZXgDDVchIWpN4eQc3lH37WarduXFZJOtxfw==
 
 debug@2:
   version "2.6.9"
