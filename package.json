@@ -51,7 +51,7 @@
     "react-syntax-highlighter": "^15.4.3",
     "rehype-raw": "^5.1.0",
     "rss": "^1.2.2",
-    "sass": "^1.32.12",
+    "sass": "^1.32.13",
     "stylelint": "^13.13.1",
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-order": "^4.1.0",
