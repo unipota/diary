@@ -300,10 +300,10 @@
     "@babel/helper-validator-identifier" "^7.14.0"
     to-fast-properties "^2.0.0"
 
-"@corex/deepmerge@^2.5.6":
-  version "2.5.6"
-  resolved "https://registry.yarnpkg.com/@corex/deepmerge/-/deepmerge-2.5.6.tgz#a5d26c6a0f4df1f65d17871c94f463d5097e349a"
-  integrity sha512-zvClQyrUGV4Hzr2zWnyD/MS0DrNWJ9jMKFLYA/abmsU4dObMuFXhragGqWpWHW6G/ghJpf09E+JumTo5jSb9rg==
+"@corex/deepmerge@^2.6.20":
+  version "2.6.20"
+  resolved "https://registry.yarnpkg.com/@corex/deepmerge/-/deepmerge-2.6.20.tgz#a72d1cb5a101fd11160815b96f499a588362ba5b"
+  integrity sha512-oZZxwDtV0bf8VPcSIhZPvdBFUkVIC8zRblUjrrVAsbGRiqUuZJfoXw2M6NDiIXWcUCfOqbkFND6Yf3b9ej9AjA==
 
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
@@ -3534,12 +3534,12 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next-sitemap@^1.6.29:
-  version "1.6.29"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-1.6.29.tgz#1a72305307d5b51c7313bc1299fd143449ab9a14"
-  integrity sha512-BXWokbe07FIBHFVnLUBYbghX4n6yUA8d6S2c5YqbYnsQg1Bo+/rBizfsU9n6AOND3ClNiXy1HgC/7z5lVO3RUw==
+next-sitemap@^1.6.91:
+  version "1.6.91"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-1.6.91.tgz#a61a54fc73760e7f40401d0f7fc6257ffb99c387"
+  integrity sha512-C9Iuoqw5Acqt9Y/j4WCjgKo7rx78Scdk74EWsOqj7hbgjFlztX93koOkL60semVsQBSCbMQo/SAFwo+3fUTOxw==
   dependencies:
-    "@corex/deepmerge" "^2.5.6"
+    "@corex/deepmerge" "^2.6.20"
     matcher "^4.0.0"
     minimist "^1.2.5"
 
