@@ -1,5 +1,4 @@
 import styled from '@emotion/styled'
-import { NormalComponent } from 'react-markdown/src/ast-to-react'
 
 interface Props {
   src: string
