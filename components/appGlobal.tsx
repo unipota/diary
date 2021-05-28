@@ -24,6 +24,7 @@ const AppGlobal: FC<Props> = ({ children }) => {
             transition: background-color 0.4s ease;
             --theme-color-background: ${currentTheme.color.background};
             --theme-color-placeholder: ${currentTheme.color.placeholder};
+            --theme-color-shade: ${currentTheme.color.shade};
           }
           .spotify {
             border-radius: 12px;

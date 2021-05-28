@@ -1,4 +1,3 @@
-import { GA_TRACKING_ID } from '@lib/gtag'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 export default class MyDocument extends Document {
@@ -6,28 +5,15 @@ export default class MyDocument extends Document {
     return (
       <Html lang="ja">
         <Head>
-          {GA_TRACKING_ID !== undefined ? (
-            <>
-              <script
-                async
-                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-              />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
+          {
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"unipota",utcoffset:"9"}))};sessionStorage.setItem("_swa","1");
           `,
-                }}
-              />
-            </>
-          ) : (
-            <></>
-          )}
+              }}
+            />
+          }
         </Head>
         <body>
           <Main />
