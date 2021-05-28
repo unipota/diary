@@ -38,7 +38,7 @@ export const DarkTheme: Theme = {
     background: nord.nord0,
     body: nord.nord4,
     shade: transparentize(nord.nord1, 0.1),
-    placeholder: nord.nord3,
+    placeholder: transparentize(nord.nord3, 0.7),
     tint: nord.nord3,
   },
   textColor: {
