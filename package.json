@@ -18,7 +18,7 @@
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@fullhuman/postcss-purgecss": "^4.0.3",
-    "@next/bundle-analyzer": "^10.2.0",
+    "@next/bundle-analyzer": "^10.2.3",
     "@tailwindcss/jit": "^0.1.18",
     "@thi.ng/color": "^3.1.15",
     "@thi.ng/random": "^2.3.1",
