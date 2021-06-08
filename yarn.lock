@@ -3488,10 +3488,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next-sitemap@^1.6.95:
-  version "1.6.95"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-1.6.95.tgz#5f7ea8ebd1b41730250ca3a1f1abd2a4320902ff"
-  integrity sha512-vrmqS+iAoWxQunzBn0hx5Wq4kJWaHbJeaYRxG0Qy5fOuzJ5urqdcjrt6bL1UqmUziZmNpBfIUqV4Sh+6NDiC3g==
+next-sitemap@^1.6.105:
+  version "1.6.105"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-1.6.105.tgz#1aeb6336c627ae65a0b9b2a87bd3963964db6403"
+  integrity sha512-l0ZAxVbVZg1g6wp8MAEbVa2CeOjVDuVg0B56iTyR8YHgMAswID2uKBLcTSTnauTPt2uQZPkO5LCd1WCciZ1ybQ==
   dependencies:
     "@corex/deepmerge" "^2.6.20"
     matcher "^4.0.0"
