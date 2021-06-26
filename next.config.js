@@ -14,7 +14,6 @@ const config = bundleAnalyzer({
     ignoreBuildErrors: false,
   },
   future: {
-    webpack5: true,
     strictPostcssConfiguration: true,
   },
   experimental: {},
