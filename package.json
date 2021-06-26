@@ -40,7 +40,7 @@
     "marked": "^2.0.7",
     "next": "^11.0.1",
     "next-sitemap": "^1.6.116",
-    "postcss": "^8.3.2",
+    "postcss": "^8.3.5",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.3.1",
