@@ -610,10 +610,10 @@
     postcss-selector-parser "^6.0.4"
     quick-lru "^5.1.1"
 
-"@thi.ng/api@^7.1.4":
-  version "7.1.4"
-  resolved "https://registry.npmjs.org/@thi.ng/api/-/api-7.1.4.tgz"
-  integrity sha512-NpZB6gl4XVLr5squqYmQKa9zj8DzEOFqBF99y1IEGHs6QLgDBL0xMsCiPGuiLQte8rQFQA9qOuP/SkOQYpZ5PA==
+"@thi.ng/api@^7.1.4", "@thi.ng/api@^7.1.6":
+  version "7.1.6"
+  resolved "https://registry.yarnpkg.com/@thi.ng/api/-/api-7.1.6.tgz#48074ba50afeb6f67df5aa70bd1fffc23048770f"
+  integrity sha512-7kKgZz+pP71hnbrcPSl9VbG3zFsNiKHktUuy465Qyn2Ow+v0GQvfM/PWyxT9TVOqSOu1f3PmQYc4vXGnPYOxgg==
 
 "@thi.ng/arrays@^0.10.11":
   version "0.10.11"
@@ -634,12 +634,12 @@
   dependencies:
     "@thi.ng/api" "^7.1.4"
 
-"@thi.ng/checks@^2.9.6":
-  version "2.9.6"
-  resolved "https://registry.npmjs.org/@thi.ng/checks/-/checks-2.9.6.tgz"
-  integrity sha512-huYsMCNwO+lSSMelXqIK2HS26A6OKn669dNVkxVrnJNNqsYZyAsiQwBxnJNb3H23bQQ6TmKKyYJWIcMGKUpOsA==
+"@thi.ng/checks@^2.9.6", "@thi.ng/checks@^2.9.8":
+  version "2.9.8"
+  resolved "https://registry.yarnpkg.com/@thi.ng/checks/-/checks-2.9.8.tgz#8f2ba398f07d12846dfbd8f11d1af12b22dcc67d"
+  integrity sha512-qgJW/GuL4kDQJipCN+0wDZjv3Z9xpZZiIx9/mHsm5UD9sIZxY/j5YLV/Kk/VMUzFmC/eG7gnGwLnDi56wUAEXg==
   dependencies:
-    tslib "^2.1.0"
+    tslib "^2.3.0"
 
 "@thi.ng/color@^3.1.15":
   version "3.1.15"
@@ -693,10 +693,10 @@
   resolved "https://registry.npmjs.org/@thi.ng/errors/-/errors-1.3.0.tgz"
   integrity sha512-/0U6Weot0cTTRmuiaTbD+OK7bhU30S1g/yQ7ca882hIT9tj1p7ptCgivV8YtIKO4LvWjdNgtHrr5aPGObOMtsw==
 
-"@thi.ng/hex@^0.2.5":
-  version "0.2.5"
-  resolved "https://registry.npmjs.org/@thi.ng/hex/-/hex-0.2.5.tgz"
-  integrity sha512-ziJHsLH7zUBjDlZD+q+HszUVMfx9uFE+spSrRTSnt4/fCmXuUxn6hlMAskGifNGBzpE4LB40OG1nvE+0kSYdDw==
+"@thi.ng/hex@^0.2.5", "@thi.ng/hex@^0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@thi.ng/hex/-/hex-0.2.7.tgz#eb7c8ac7641a1a63c1d0ca1e0b526c19ed3f28cf"
+  integrity sha512-AVp/NLK2dAEKq8V/IUNyReLiIPBwCrzCHWg+16wL2nXiEAZ0Cbh8D5ZZgLGR19qCNSo8P/r7cQN01hNEqIglLQ==
 
 "@thi.ng/math@^4.0.0":
   version "4.0.0"
@@ -712,14 +712,14 @@
   dependencies:
     "@thi.ng/api" "^7.1.4"
 
-"@thi.ng/random@^2.3.1", "@thi.ng/random@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.npmjs.org/@thi.ng/random/-/random-2.4.0.tgz"
-  integrity sha512-f7XXnbWP24dd+/Ea21rLKwVsKyUMlnS5v+fytrMwNOnVEfHzTv/yf2tbCryojFyJQxuOeZ7i+1ocNwTWPsqPgg==
+"@thi.ng/random@^2.4.0", "@thi.ng/random@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@thi.ng/random/-/random-2.4.2.tgz#d2152d5b1f42641112f31a4b19e638c3cb916a52"
+  integrity sha512-pCbUrmqydMkAsbnRC7yNLJtEZvwieLk/G4C2lUDemAClBrPI1R8jjlPr6094il/W8BhHDmZdj4pqVhcfWnuInA==
   dependencies:
-    "@thi.ng/api" "^7.1.4"
-    "@thi.ng/checks" "^2.9.6"
-    "@thi.ng/hex" "^0.2.5"
+    "@thi.ng/api" "^7.1.6"
+    "@thi.ng/checks" "^2.9.8"
+    "@thi.ng/hex" "^0.2.7"
 
 "@thi.ng/strings@^2.1.0":
   version "2.1.0"
@@ -948,23 +948,10 @@
     "@typescript-eslint/types" "4.28.0"
     "@typescript-eslint/visitor-keys" "4.28.0"
 
-"@typescript-eslint/scope-manager@4.28.0":
-  version "4.28.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/scope-manager/-/scope-manager-4.28.0.tgz#6a3009d2ab64a30fc8a1e257a1a320067f36a0ce"
-  integrity sha512-eCALCeScs5P/EYjwo6se9bdjtrh8ByWjtHzOkC4Tia6QQWtQr3PHovxh3TdYTuFcurkYI4rmFsRFpucADIkseg==
-  dependencies:
-    "@typescript-eslint/types" "4.28.0"
-    "@typescript-eslint/visitor-keys" "4.28.0"
-
 "@typescript-eslint/types@4.22.0":
   version "4.22.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-4.22.0.tgz"
   integrity sha512-sW/BiXmmyMqDPO2kpOhSy2Py5w6KvRRsKZnV0c4+0nr4GIcedJwXAq+RHNK4lLVEZAJYFltnnk1tJSlbeS9lYA==
-
-"@typescript-eslint/types@4.28.0":
-  version "4.28.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-4.28.0.tgz#a33504e1ce7ac51fc39035f5fe6f15079d4dafb0"
-  integrity sha512-p16xMNKKoiJCVZY5PW/AfILw2xe1LfruTcfAKBj3a+wgNYP5I9ZEKNDOItoRt53p4EiPV6iRSICy8EPanG9ZVA==
 
 "@typescript-eslint/types@4.28.0":
   version "4.28.0"
@@ -997,33 +984,12 @@
     semver "^7.3.5"
     tsutils "^3.21.0"
 
-"@typescript-eslint/typescript-estree@4.28.0":
-  version "4.28.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-4.28.0.tgz#e66d4e5aa2ede66fec8af434898fe61af10c71cf"
-  integrity sha512-m19UQTRtxMzKAm8QxfKpvh6OwQSXaW1CdZPoCaQuLwAq7VZMNuhJmZR4g5281s2ECt658sldnJfdpSZZaxUGMQ==
-  dependencies:
-    "@typescript-eslint/types" "4.28.0"
-    "@typescript-eslint/visitor-keys" "4.28.0"
-    debug "^4.3.1"
-    globby "^11.0.3"
-    is-glob "^4.0.1"
-    semver "^7.3.5"
-    tsutils "^3.21.0"
-
 "@typescript-eslint/visitor-keys@4.22.0":
   version "4.22.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-4.22.0.tgz"
   integrity sha512-nnMu4F+s4o0sll6cBSsTeVsT4cwxB7zECK3dFxzEjPBii9xLpq4yqqsy/FU5zMfan6G60DKZSCXAa3sHJZrcYw==
   dependencies:
     "@typescript-eslint/types" "4.22.0"
-    eslint-visitor-keys "^2.0.0"
-
-"@typescript-eslint/visitor-keys@4.28.0":
-  version "4.28.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/visitor-keys/-/visitor-keys-4.28.0.tgz#255c67c966ec294104169a6939d96f91c8a89434"
-  integrity sha512-PjJyTWwrlrvM5jazxYF5ZPs/nl0kHDZMVbuIcbpawVXaDPelp3+S9zpOz5RmVUfS/fD5l5+ZXNKnWhNYjPzCvw==
-  dependencies:
-    "@typescript-eslint/types" "4.28.0"
     eslint-visitor-keys "^2.0.0"
 
 "@typescript-eslint/visitor-keys@4.28.0":
@@ -5220,13 +5186,6 @@ semver@^7.2.1, semver@^7.3.2, semver@^7.3.5:
   dependencies:
     lru-cache "^6.0.0"
 
-semver@^7.3.5:
-  version "7.3.5"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.5.tgz#0b621c879348d8998e4b0e4be94b3f12e6018ef7"
-  integrity sha512-PoeGJYh8HK4BTO/a9Tf6ZG3veo/A7ZVsYrSA6J8ny9nb3B1VrpkuN+z9OE5wfE5p6H4LchYZsegiQgbJD94ZFQ==
-  dependencies:
-    lru-cache "^6.0.0"
-
 setimmediate@^1.0.4:
   version "1.0.5"
   resolved "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz"
@@ -5846,19 +5805,12 @@ tslib@^1.8.1:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/tslib/-/tslib-2.1.0.tgz"
-  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
+tslib@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
+  integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
 
 tsutils@^3.17.1, tsutils@^3.21.0:
-  version "3.21.0"
-  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.21.0.tgz#b48717d394cea6c1e096983eed58e9d61715b623"
-  integrity sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==
-  dependencies:
-    tslib "^1.8.1"
-
-tsutils@^3.21.0:
   version "3.21.0"
   resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.21.0.tgz#b48717d394cea6c1e096983eed58e9d61715b623"
   integrity sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==
