@@ -55,9 +55,9 @@
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0",
-    "tailwindcss": "^2.1.2",
+    "tailwindcss": "^2.2.4",
     "twin.macro": "^2.5.0",
-    "typescript": "^4.3.2",
+    "typescript": "^4.3.5",
     "zdog": "^1.1.2"
   },
   "devDependencies": {
