@@ -911,10 +911,10 @@
   resolved "https://registry.npmjs.org/@types/unist/-/unist-2.0.3.tgz"
   integrity sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
 
-"@types/zdog@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@types/zdog/-/zdog-1.1.1.tgz"
-  integrity sha512-pEtwfB3RqQQVFf5Vk92mnVW9XRXUEx2HMItcfg+dSHgMPG4W7jmzDvPbPJYNK8qyZNZNnNWLAqbQpluvOy2Mng==
+"@types/zdog@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@types/zdog/-/zdog-1.1.2.tgz#f18cb79e4ad5ce69f5c332615e54e87ebb670ebe"
+  integrity sha512-E1nINLaVvxu7N66gANMjhlxMdGL9KqsePa7NyO4p96xeQ7YiAjydVH+eE4W2aLdGyIcLqt+pNMK8l7+gD8c+Wg==
 
 "@typescript-eslint/eslint-plugin@^4.28.0":
   version "4.28.0"
