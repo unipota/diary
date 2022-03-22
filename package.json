@@ -62,7 +62,7 @@
   },
   "devDependencies": {
     "@types/html-escaper": "^3.0.0",
-    "@types/marked": "^2.0.3",
+    "@types/marked": "^4.0.3",
     "@types/node": "^15.12.2",
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.5",
