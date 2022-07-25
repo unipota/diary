@@ -69,6 +69,6 @@
     "@types/react-syntax-highlighter": "^13.5.2",
     "@types/rss": "^0.0.28",
     "@types/zdog": "^1.1.2",
-    "eslint-config-next": "^11.0.1"
+    "eslint-config-next": "^12.2.3"
   }
 }
